@@ -216,43 +216,38 @@
     var navInner = document.querySelector('.nav-inner');
     if (!nav || !navInner) return;
 
-    // Only build the hamburger if it does not already exist
-    if (document.querySelector('.nav-hamburger')) return;
-
-    // --- Create hamburger button ---
-    var hamburger = document.createElement('button');
-    hamburger.className = 'nav-hamburger';
-    hamburger.setAttribute('aria-label', 'Toggle navigation menu');
-    hamburger.innerHTML = '<span></span><span></span><span></span>';
-
-    // Insert hamburger into .nav-inner (after logo, before links)
-    var navRight = document.querySelector('.nav-right');
-    if (navRight) {
-      navInner.insertBefore(hamburger, navRight);
-    } else {
-      navInner.appendChild(hamburger);
+    // Use existing hamburger if already in HTML, otherwise create one
+    var hamburger = document.querySelector('.nav-hamburger');
+    if (!hamburger) {
+      hamburger = document.createElement('button');
+      hamburger.className = 'nav-hamburger';
+      hamburger.setAttribute('aria-label', 'Toggle navigation menu');
+      hamburger.innerHTML = '<span></span><span></span><span></span>';
+      var navRight = document.querySelector('.nav-right');
+      if (navRight) {
+        navRight.appendChild(hamburger);
+      } else {
+        navInner.appendChild(hamburger);
+      }
     }
 
-    // --- Create mobile menu ---
-    var mobileMenu = document.createElement('div');
-    mobileMenu.className = 'nav-mobile-menu';
-
-    // Clone existing nav links into the mobile menu
-    var desktopLinks = document.querySelector('.nav-links');
-    if (desktopLinks) {
-      var clone = desktopLinks.cloneNode(true);
-      mobileMenu.appendChild(clone);
+    // Use existing mobile menu if already in HTML, otherwise create one
+    var mobileMenu = document.querySelector('.nav-mobile-menu');
+    if (!mobileMenu) {
+      mobileMenu = document.createElement('div');
+      mobileMenu.className = 'nav-mobile-menu';
+      var desktopLinks = document.querySelector('.nav-links');
+      if (desktopLinks) {
+        mobileMenu.appendChild(desktopLinks.cloneNode(true));
+      }
+      var ctaBtn = document.querySelector('.nav-right .nav-cta');
+      if (ctaBtn) {
+        var ctaClone = ctaBtn.cloneNode(true);
+        ctaClone.className = 'nav-cta nav-mobile-cta';
+        mobileMenu.appendChild(ctaClone);
+      }
+      nav.appendChild(mobileMenu);
     }
-
-    // Clone CTA button if it exists
-    var ctaBtn = document.querySelector('.nav-cta');
-    if (ctaBtn) {
-      var ctaClone = ctaBtn.cloneNode(true);
-      ctaClone.className = 'nav-cta nav-mobile-cta';
-      mobileMenu.appendChild(ctaClone);
-    }
-
-    nav.appendChild(mobileMenu);
 
     // --- Toggle ---
     hamburger.addEventListener('click', function (e) {
@@ -425,14 +420,18 @@
     var isSinglePage = currentPath === '/' || currentPath === '/index.html';
 
     if (!isSinglePage) {
+      // Resolve each link's href to an absolute pathname and compare to current page
+      var norm = function(p) {
+        return p.replace(/\.html$/, '').replace(/\/$/, '') || '/index';
+      };
+      var curNorm = norm(currentPath);
       links.forEach(function (link) {
         var href = link.getAttribute('href') || '';
         var hrefPath = href.split('#')[0];
-        // Normalise both paths
-        var norm = function(p) { return p.replace(/^.*\//, '').replace(/\.html$/, '').replace(/\/$/, '') || 'index'; };
-        var linkPage = norm(hrefPath);
-        var curPage = norm(currentPath);
-        if (linkPage && linkPage === curPage) {
+        if (!hrefPath) { link.classList.remove('active'); return; }
+        // Resolve relative href against current path
+        var resolved = new URL(hrefPath, window.location.href).pathname;
+        if (norm(resolved) === curNorm) {
           link.classList.add('active');
         } else {
           link.classList.remove('active');

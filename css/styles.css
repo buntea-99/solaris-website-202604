@@ -396,11 +396,15 @@ nav {
   background: var(--bg-2);
 }
 
-.nav-mobile-menu .nav-cta {
+.nav-mobile-menu .nav-cta,
+.nav-mobile-menu .nav-mobile-cta {
   margin-top: 1rem;
   text-align: center;
+  display: block;
   width: 100%;
-  padding: 0.85rem;
+  padding: 0.95rem;
+  border-radius: var(--radius);
+  box-sizing: border-box;
 }
 
 
@@ -2085,6 +2089,11 @@ div.contact-meta > div.c-meta-row:hover {
   }
 
   .nav-tel {
+    display: none;
+  }
+
+  /* Hide Get a Quote CTA from nav-right on mobile — it lives in the mobile menu instead */
+  .nav-right .nav-cta {
     display: none;
   }
 
