@@ -1060,10 +1060,11 @@ nav {
   transition: box-shadow 0.25s, border-color 0.25s;
 }
 
-.flip-front > svg {
-  align-self: center;
-  display: block;
-  filter: drop-shadow(0 4px 12px rgba(196, 154, 26, 0.18));
+.f-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .flip-card:hover .flip-front {
