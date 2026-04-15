@@ -236,6 +236,15 @@ nav {
   height: 28px;
   width: auto;
   display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  draggable: false;
+  pointer-events: none;
+}
+
+.nav-logo {
+  pointer-events: auto;
 }
 
 .nav-links {
@@ -1730,6 +1739,9 @@ div.contact-meta > div.c-meta-row:hover {
   width: auto;
   filter: brightness(0) invert(1);
   opacity: 0.9;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 .footer-col-title {

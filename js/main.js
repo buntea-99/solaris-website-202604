@@ -168,11 +168,17 @@
           }
         });
       },
-      { threshold: 0.07 }
+      { threshold: 0, rootMargin: '0px 0px -20px 0px' }
     );
 
     reveals.forEach(function (el) {
-      observer.observe(el);
+      // If already in viewport at load time, reveal immediately
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('in');
+      } else {
+        observer.observe(el);
+      }
     });
   }
 
@@ -414,35 +420,58 @@
     var links = document.querySelectorAll('.nav-links a');
     if (!links.length) return;
 
-    var currentPath = window.location.pathname.replace(/\/$/, '');
-    var currentHash = window.location.hash;
+    // For multi-page sites (blog, case-studies, legal pages) just match by path
+    var currentPath = window.location.pathname;
+    var isSinglePage = currentPath === '/' || currentPath === '/index.html';
 
+    if (!isSinglePage) {
+      links.forEach(function (link) {
+        var href = link.getAttribute('href') || '';
+        var hrefPath = href.split('#')[0];
+        // Normalise both paths
+        var norm = function(p) { return p.replace(/^.*\//, '').replace(/\.html$/, '').replace(/\/$/, '') || 'index'; };
+        var linkPage = norm(hrefPath);
+        var curPage = norm(currentPath);
+        if (linkPage && linkPage === curPage) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+      return;
+    }
+
+    // Single-page scroll spy — highlight whichever section is most in view
+    var sections = [];
     links.forEach(function (link) {
       var href = link.getAttribute('href') || '';
-
-      // Match full pathname or hash-only links on the same page
-      var hrefPath = href.split('#')[0].replace(/\/$/, '');
-      var hrefHash = href.indexOf('#') !== -1 ? '#' + href.split('#')[1] : '';
-
-      var pathMatch = false;
-      if (hrefPath && (hrefPath === currentPath || currentPath.endsWith(hrefPath))) {
-        pathMatch = true;
-      }
-      if (!hrefPath && hrefHash && hrefHash === currentHash) {
-        pathMatch = true;
-      }
-
-      if (pathMatch) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
+      var hash = href.indexOf('#') !== -1 ? href.split('#')[1] : null;
+      if (hash) {
+        var el = document.getElementById(hash);
+        if (el) sections.push({ link: link, el: el });
       }
     });
 
-    // Also update on hash change for single-page scroll navigation
-    window.addEventListener('hashchange', function () {
-      initActiveNav();
-    });
+    function updateActive() {
+      var scrollY = window.scrollY || window.pageYOffset;
+      var winH = window.innerHeight;
+      var best = null;
+      var bestRatio = -1;
+
+      sections.forEach(function (s) {
+        var rect = s.el.getBoundingClientRect();
+        // How much of the section is visible
+        var visible = Math.min(rect.bottom, winH) - Math.max(rect.top, 0);
+        var ratio = visible / Math.max(s.el.offsetHeight, 1);
+        if (ratio > bestRatio) { bestRatio = ratio; best = s; }
+      });
+
+      links.forEach(function (link) { link.classList.remove('active'); });
+      if (best && bestRatio > 0.05) best.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
   }
 
   /* ==========================================================================
