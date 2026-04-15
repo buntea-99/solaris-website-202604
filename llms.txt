@@ -1,0 +1,83 @@
+# Solaris Wireless
+
+> Institutional technology supply, provisioning and fulfilment — headquartered in Miami, FL.
+
+## Company Overview
+
+Solaris Wireless is an institutional technology supply company founded in 2016. We source, provision and fulfil mobile devices, laptops, IoT hardware, Starlink terminals and consumer electronics for government agencies, Fortune 500 companies, MVNOs and network operators worldwide. We are not a consumer retailer — every system we operate is engineered for institutional-scale procurement.
+
+## Key Facts
+
+- Founded: 2016
+- Headquarters: Miami, Florida, United States
+- Google-approved vendor since 2016
+- 100,000+ mobile units supplied to network operators
+- 10,000+ custom-provisioned devices deployed globally
+- 5 global supply chain nodes across 4 continents (Miami, Netherlands, Dubai, Hong Kong, Singapore)
+- Clients include Google, T-Mobile, Vodafone, Orange, Ritual.co, Republic Wireless, Bluesky Cook Islands, Cook Islands Telecom, Parallel Wireless, Amazon marketplace sellers
+
+## Products
+
+- **Mobile Devices**: Smartphones, feature phones and rugged handsets from Apple, Samsung, Motorola, Nokia, Kyocera, Sonim and more — Android, iOS and KaiOS
+- **Laptops & Notebooks**: Enterprise-grade HP, Dell, Lenovo, Apple MacBook, Chromebooks for corporate, education and government deployments
+- **IoT & Smart Devices**: Smart cameras, wireless speakers, earphones, AI glasses, sensors, GPS trackers and industrial IoT gateways
+- **Starlink & Connectivity**: Starlink terminal kits (Standard, Business, Maritime), enterprise routers, mesh networking, LTE/5G gateways
+- **Consumer Electronics**: Game consoles (PlayStation, Xbox, Nintendo Switch), tablets, wearables and accessories at bulk pricing
+- **Specialist & Component Hardware**: Component-level sourcing for body camera manufacturers, medical device OEMs and industrial equipment makers
+
+## Services
+
+- **Supply & Sourcing**: Global hardware sourcing through OEM relationships, authorised distributors and strategic partners across 4 continents
+- **Device Provisioning**: OS flashing, SIM lock configuration, carrier branding, MMS/APN parameter setup, app pre-installation, MDM enrolment and custom firmware deployment
+- **Order Fulfilment**: Direct-to-customer delivery, international freight forwarding, consignment holding, retail packaging and managed logistics to 120+ countries
+- **Kitting & Assembly**: Stand mounting, retail packaging, labelling, asset tagging, accessory bundling and quality assurance for deploy-ready units
+
+## Sectors Served
+
+- Government & Public Sector (federal, state, municipal procurement)
+- Telecommunications (MVNOs, MNOs, regional carriers)
+- Enterprise & Fortune 500 (corporate fleets, field operations)
+- Military & Defence (ruggedised devices, secure logistics)
+- Education (K-12 school districts, universities)
+- Healthcare (hospitals, telehealth, medical devices)
+- Hospitality & Retail (point-of-sale, kiosks)
+
+## Case Studies
+
+- **MVNO & Network Operator Sourcing**: 100,000+ provisioned handsets across six MVNO operators in Europe and North America
+- **Ritual.co Kiosk Deployment**: ~10,000 Android One kiosk units sourced, provisioned, kitted and deployed across North America, Europe and Australia
+- **Specialist Hardware Component Sourcing**: Smartphones sourced as component platforms for body camera and medical device manufacturers
+- **Google & Fortune 500 Procurement**: Approved vendor since 2016 for mission-critical, end-of-life and niche-specification hardware
+- **Government & Military Deployment**: Ruggedised devices for military field use and remote education programmes in developing nations
+
+## Contact
+
+- Website: https://solariswireless.com
+- Contact page: https://solariswireless.com/pages/contact.html
+- Headquarters: Miami, Florida, United States
+- Regional offices: Netherlands (EU), Dubai (MEA), Hong Kong (APAC), Singapore (SEA)
+
+## Site Pages
+
+- Home: https://solariswireless.com/
+- About: https://solariswireless.com/pages/about.html
+- Services: https://solariswireless.com/pages/services.html
+- Products: https://solariswireless.com/pages/products.html
+- Case Studies: https://solariswireless.com/pages/case-studies.html
+- Blog: https://solariswireless.com/blog/index.html
+- Contact: https://solariswireless.com/pages/contact.html
+
+## Blog Articles
+
+- The Complete Guide to Institutional Mobile Device Sourcing in 2026: https://solariswireless.com/blog/institutional-mobile-device-sourcing.html
+- Enterprise Laptop Procurement: How to Source at Scale Without Overpaying: https://solariswireless.com/blog/enterprise-laptop-procurement.html
+- IoT Hardware Supply Chains: From Smart Cameras to Industrial Sensors: https://solariswireless.com/blog/iot-hardware-supply-chain.html
+- Starlink Terminal Deployment: Sourcing, Configuration and Field Installation at Scale: https://solariswireless.com/blog/starlink-terminal-deployment.html
+
+## Case Study Pages
+
+- MVNO & Network Operator Sourcing: https://solariswireless.com/case-studies/mvno-network-operator-sourcing.html
+- Ritual.co Kiosk Deployment: https://solariswireless.com/case-studies/ritual-kiosk-deployment.html
+- Specialist Hardware Sourcing: https://solariswireless.com/case-studies/specialist-hardware-sourcing.html
+- Google & Fortune 500 Procurement: https://solariswireless.com/case-studies/google-fortune-500-procurement.html
+- Government & Military Deployment: https://solariswireless.com/case-studies/government-military-deployment.html
