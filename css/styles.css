@@ -2418,3 +2418,130 @@ div.contact-meta > div.c-meta-row:hover {
 .cs-related .cs-grid {
   grid-template-columns: repeat(3, 1fr);
 }
+
+
+/* --------------------------------------------------------------------------
+   About Overview Section (Homepage)
+   -------------------------------------------------------------------------- */
+
+.about-overview {
+  padding: 5rem 0;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--rule);
+}
+
+.about-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-stats-card {
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .about-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Legal Content Pages
+   -------------------------------------------------------------------------- */
+
+.legal-content {
+  font-family: var(--body);
+  line-height: 1.8;
+  color: var(--text-mid);
+}
+
+.legal-content h2 {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.legal-content ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.legal-content li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   Footer Legal Links
+   -------------------------------------------------------------------------- */
+
+.footer-links-legal {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--slate-mid);
+}
+
+.footer-links-legal a {
+  color: var(--slate-mid);
+  text-decoration: none;
+  transition: color 0.18s;
+}
+
+.footer-links-legal a:hover {
+  color: #fff;
+}
+
+
+/* --------------------------------------------------------------------------
+   Product Card Link Reset (no underlines when <a>)
+   -------------------------------------------------------------------------- */
+
+a.product-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.product-card:hover {
+  text-decoration: none;
+}
+
+
+/* --------------------------------------------------------------------------
+   Case Study Link Underline Fix
+   -------------------------------------------------------------------------- */
+
+.cs-body a,
+.cs-detail a,
+.modal-body a {
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: 500;
+  transition: color 0.18s;
+}
+
+.cs-body a:hover,
+.cs-detail a:hover,
+.modal-body a:hover {
+  color: var(--gold-mid);
+}

@@ -1,6 +1,9 @@
 {
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "framework": null,
-  "installCommand": null
+  "redirects": [
+    { "source": "/pages/about.html", "destination": "/#about", "permanent": true },
+    { "source": "/pages/services.html", "destination": "/#capabilities", "permanent": true },
+    { "source": "/pages/products.html", "destination": "/#products", "permanent": true },
+    { "source": "/pages/contact.html", "destination": "/#contact", "permanent": true },
+    { "source": "/pages/case-studies.html", "destination": "/#case-studies", "permanent": true }
+  ]
 }

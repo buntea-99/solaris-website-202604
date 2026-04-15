@@ -53,19 +53,33 @@ Solaris Wireless is an institutional technology supply company founded in 2016. 
 ## Contact
 
 - Website: https://solariswireless.com
-- Contact page: https://solariswireless.com/pages/contact.html
+- Contact: https://solariswireless.com/#contact
 - Headquarters: Miami, Florida, United States
 - Regional offices: Netherlands (EU), Dubai (MEA), Hong Kong (APAC), Singapore (SEA)
 
-## Site Pages
+## Site Links
 
 - Home: https://solariswireless.com/
-- About: https://solariswireless.com/pages/about.html
-- Services: https://solariswireless.com/pages/services.html
-- Products: https://solariswireless.com/pages/products.html
-- Case Studies: https://solariswireless.com/pages/case-studies.html
+- About: https://solariswireless.com/#about
+- Services: https://solariswireless.com/#capabilities
+- Products: https://solariswireless.com/#products
+- Case Studies: https://solariswireless.com/#case-studies
 - Blog: https://solariswireless.com/blog/index.html
-- Contact: https://solariswireless.com/pages/contact.html
+- Contact: https://solariswireless.com/#contact
+
+## Product Detail Pages
+
+- Mobile Devices: https://solariswireless.com/products/mobile-devices.html
+- Laptops: https://solariswireless.com/products/laptops.html
+- IoT & Smart Cameras: https://solariswireless.com/products/iot-smart-cameras.html
+- Starlink & Connectivity: https://solariswireless.com/products/starlink-connectivity.html
+- Consumer Electronics: https://solariswireless.com/products/consumer-electronics.html
+- Specialist Hardware: https://solariswireless.com/products/specialist-hardware.html
+
+## Legal Pages
+
+- Privacy Policy: https://solariswireless.com/legal/privacy-policy.html
+- Terms of Use: https://solariswireless.com/legal/terms.html
 
 ## Blog Articles
 
