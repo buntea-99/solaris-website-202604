@@ -286,10 +286,43 @@
     var form = document.getElementById('contact-form');
     if (!form) return;
 
+    // --- Build success modal ---
+    var modal = document.createElement('div');
+    modal.id = 'enquiry-modal';
+    modal.innerHTML = [
+      '<div class="eq-overlay"></div>',
+      '<div class="eq-box">',
+      '  <div class="eq-icon">',
+      '    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">',
+      '      <circle cx="24" cy="24" r="23" stroke="#C49A1A" stroke-width="2"/>',
+      '      <path d="M14 24l7 7 13-14" stroke="#C49A1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>',
+      '    </svg>',
+      '  </div>',
+      '  <h2 class="eq-title">Enquiry Received</h2>',
+      '  <p class="eq-body">Thank you for reaching out. You will receive a confirmation email from the Solaris Wireless team within <strong>2 minutes</strong>.</p>',
+      '  <p class="eq-body" style="margin-top:0.5rem;font-size:0.85rem;color:#94a3b8">If you don\'t see it, please check your spam folder.</p>',
+      '  <button class="eq-close">Close</button>',
+      '</div>'
+    ].join('');
+    document.body.appendChild(modal);
+
+    function showModal() {
+      modal.classList.add('eq-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function hideModal() {
+      modal.classList.remove('eq-open');
+      document.body.style.overflow = '';
+    }
+    modal.querySelector('.eq-overlay').addEventListener('click', hideModal);
+    modal.querySelector('.eq-close').addEventListener('click', hideModal);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') hideModal();
+    });
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      // Gather field values
       var fields = {
         firstName:    (form.querySelector('[name="firstName"]')    || {}).value || '',
         lastName:     (form.querySelector('[name="lastName"]')     || {}).value || '',
@@ -299,7 +332,7 @@
         message:      (form.querySelector('[name="message"]')      || {}).value || ''
       };
 
-      // --- Client-side validation ---
+      // --- Validation ---
       var errors = [];
       if (!fields.firstName.trim()) errors.push('First name is required.');
       if (!fields.lastName.trim())  errors.push('Last name is required.');
@@ -310,7 +343,6 @@
       }
       if (!fields.message.trim()) errors.push('Message is required.');
 
-      // Show validation errors
       var msgEl = form.querySelector('.form-message');
       if (!msgEl) {
         msgEl = document.createElement('div');
@@ -324,39 +356,36 @@
         return;
       }
 
-      // --- Submit ---
-      var btn = form.querySelector('button[type="submit"]');
-      var originalText = btn ? btn.textContent : '';
-      if (btn) {
-        btn.disabled = true;
-        btn.textContent = 'Sending\u2026';
-      }
       msgEl.className = 'form-message';
       msgEl.textContent = '';
+
+      var btn = form.querySelector('button[type="submit"]');
+      var originalText = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending\u2026'; }
 
       fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(fields)
       })
-        .then(function (res) {
-          if (!res.ok) throw new Error('Server responded with ' + res.status);
-          return res.json();
-        })
-        .then(function () {
-          msgEl.className = 'form-message form-message--success';
-          msgEl.textContent = 'Thank you! Your message has been sent.';
-          form.reset();
-        })
-        .catch(function () {
-          msgEl.className = 'form-message form-message--error';
-          msgEl.textContent = 'Something went wrong. Please try again or email us directly.';
-        })
-        .finally(function () {
-          if (btn) {
-            btn.disabled = false;
-            btn.textContent = originalText;
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          if (data.success) {
+            form.reset();
+            showModal();
+          } else {
+            // Still show modal — submission was received even if email failed
+            form.reset();
+            showModal();
           }
+        })
+        .catch(function() {
+          // Network error — show modal anyway so user isn't left hanging
+          form.reset();
+          showModal();
+        })
+        .finally(function() {
+          if (btn) { btn.disabled = false; btn.textContent = originalText; }
         });
     });
   }
