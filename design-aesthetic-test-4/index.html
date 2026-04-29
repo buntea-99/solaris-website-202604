@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solaris Wireless — Institutional Scale Procurement</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Outfit', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace'],
+        },
+        colors: {
+          canvas: '#F9FAFB',
+          ink: '#09090b', // Zinc 950
+          muted: '#71717A',
+          accent: '#c29b20', // Desaturated, muted gold/mustard related to original but darker to meet contrast
+          whisper: 'rgba(226, 232, 240, 0.4)',
+        },
+        boxShadow: {
+          diffusion: '0 30px 60px -15px rgba(0,0,0,0.04)',
+          innerRefract: 'inset 0 1px 0 0 rgba(255, 255, 255, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.2)',
+        }
+      }
+    }
+  }
+</script>
+<style type="text/tailwindcss">
+  @layer base {
+    ::selection { background-color: theme('colors.ink'); color: theme('colors.canvas'); }
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    /* Hide scrollbar for a cleaner Apple-like feel */
+    ::-webkit-scrollbar { display: none; }
+  }
+  @layer utilities {
+    .glass-panel {
+      @apply bg-white/60 backdrop-blur-2xl shadow-diffusion rounded-[2.5rem] border border-white focus:outline-none overflow-hidden relative;
+    }
+    .glass-panel::before {
+      content: '';
+      position: absolute; inset: 0;
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.8), inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+      border-radius: 2.5rem; pointer-events: none; z-index: 10;
+    }
+    .text-balance-custom { text-wrap: balance; }
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Unpkg CDN for Lenis and GSAP -->
+<script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<link rel="stylesheet" href="css/styles.css"> <!-- Overrides specific CSS -->
+</head>
+<body class="bg-canvas text-ink font-sans transition-colors duration-1000 ease-in-out">
+
+  <!-- Apple-style Floating Nav -->
+  <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-full bg-white/70 backdrop-blur-xl border border-white/40 shadow-sm flex items-center gap-8 nav-fluid-entrance scale-95 opacity-0">
+    <a href="/" class="flex flex-col cursor-pointer hover:opacity-75 transition-opacity">
+      <span class="font-semibold text-lg leading-none tracking-tight">Solaris</span>
+      <span class="text-[10px] uppercase font-mono text-muted tracking-widest leading-none mt-1">Institutional</span>
+    </a>
+    <div class="h-4 w-px bg-slate-300"></div>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="#about" class="hover:text-accent transition-colors">Infrastructure</a>
+      <a href="#capabilities" class="hover:text-accent transition-colors">Capabilities</a>
+      <a href="#products" class="hover:text-accent transition-colors">Deployments</a>
+    </div>
+    <a href="#contact" class="hidden md:inline-flex bg-ink text-white hover:bg-ink/80 hover:scale-[0.98] transition-all px-4 py-2 rounded-full text-sm font-medium">Initiate Supply</a>
+  </nav>
+
+  <!-- Asymmetric Cinematic Hero -->
+  <section class="h-[100dvh] w-full flex items-center justify-start px-8 md:px-16 pt-20 relative overflow-hidden" id="hero">
+    <div class="max-w-[1400px] mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Typography focus -->
+      <div class="col-span-1 lg:col-span-8 flex flex-col items-start hero-text-reveal">
+        <div class="mb-8 overflow-hidden">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-mono font-medium tracking-wide shadow-sm translate-y-full opacity-0 stamp-reveal">APPROVED GOOGLE VENDOR &middot; GLOBAL SUPPLY CHAIN</span>
+        </div>
+        
+        <h1 class="text-6xl md:text-8xl font-medium tracking-tighter leading-[0.9] text-balance-custom mb-6">
+          <span class="overflow-hidden block"><span class="block line-anim blur-sm translate-y-[20%] opacity-0">Hardware supply</span></span>
+          <span class="overflow-hidden block flex items-center gap-4">
+            <span class="block line-anim blur-sm translate-y-[20%] opacity-0">chains built</span>
+            <!-- The Inline typography image technique -->
+            <span class="w-[80px] h-[50px] md:w-[140px] md:h-[80px] rounded-full overflow-hidden inline-block shrink-0 img-inline-anim scale-50 opacity-0 relative shadow-sm border border-white/20">
+              <img src="images/logo-main.jpg" alt="Context" class="w-full h-full object-cover grayscale opacity-80 mix-blend-multiply absolute inset-0 mix-blend-mode">
+              <div class="absolute inset-0 bg-slate-900/10"></div>
+            </span>
+          </span>
+          <span class="overflow-hidden block"><span class="block line-anim blur-sm translate-y-[20%] opacity-0">for <em class="text-accent not-italic">institutional</em></span></span>
+          <span class="overflow-hidden block"><span class="block line-anim blur-sm translate-y-[20%] opacity-0">scale.</span></span>
+        </h1>
+        
+        <div class="overflow-hidden mt-6 max-w-[55ch]">
+          <p class="text-lg md:text-xl text-muted font-light leading-relaxed desc-anim opacity-0 translate-y-4">
+            Solaris Wireless provides precision sourcing, OS provisioning, and last-mile fulfilment of enterprise mobile devices, starlink terminals, and bespoke IoT endpoints worldwide.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Deep Parallax Background elements -->
+    <div class="absolute right-[-10vw] bottom-[-20vh] w-[60vw] h-[60vw] rounded-full mix-blend-multiply blur-3xl opacity-20 bg-accent bg-blend-screen pointer-events-none hero-blob translate-y-32"></div>
+  </section>
+
+  <!-- Fluid Horizontal Scroll Hijack - Capabilities -->
+  <section class="h-screen w-full relative overflow-hidden bg-ink text-white" id="capabilities-wrap">
+    
+    <div class="absolute top-20 left-16 z-20">
+      <h2 class="text-4xl md:text-6xl font-medium tracking-tighter sticky top-20 horizontal-heading opacity-0">Capabilities Engine</h2>
+    </div>
+
+    <!-- The horizontal container -->
+    <div class="flex h-full items-center pl-[20vw] gap-12 px-8 horizontal-gallery w-[300vw]">
+      
+      <!-- Card 1 -->
+      <div class="w-[70vw] md:w-[45vw] lg:w-[35vw] h-[60vh] shrink-0 bg-white/5 backdrop-blur-lg border border-white/10 rounded-[3rem] p-10 flex flex-col justify-between hover-card-tilt transition-transform relative overflow-hidden group">
+        <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+        <div class="font-mono text-muted text-sm tracking-widest flex items-center justify-between">
+          <span>[ 01 ]</span> <span class="bg-white/10 px-3 py-1 rounded-full text-white/70">SUPPLY</span>
+        </div>
+        <div>
+          <h3 class="text-3xl md:text-5xl tracking-tight mb-4 group-hover:pl-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">Precision Sourcing</h3>
+          <p class="text-white/60 leading-relaxed text-lg max-w-[80%]">Tens of thousands of SKUs — sourced through global nodes. Mobile, laptops, game consoles, Starlink, and IoT hardware delivered precisely.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-[70vw] md:w-[45vw] lg:w-[35vw] h-[60vh] shrink-0 bg-white/5 backdrop-blur-lg border border-white/10 rounded-[3rem] p-10 flex flex-col justify-between hover-card-tilt transition-transform relative overflow-hidden group mt-16 lg:mt-32">
+        <div class="font-mono text-muted text-sm tracking-widest flex items-center justify-between">
+          <span>[ 02 ]</span> <span class="bg-white/10 px-3 py-1 rounded-full text-white/70">PROVISION</span>
+        </div>
+        <div>
+          <h3 class="text-3xl md:text-5xl tracking-tight mb-4 group-hover:pl-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">OS Flashing & Firmware</h3>
+          <p class="text-white/60 leading-relaxed text-lg max-w-[80%]">SIM locking, carrier banners, MMS configurations, app pre-installation. Every unit configured identically at ten-thousand scale.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-[70vw] md:w-[45vw] lg:w-[35vw] h-[60vh] shrink-0 bg-white/5 backdrop-blur-lg border border-white/10 rounded-[3rem] p-10 flex flex-col justify-between hover-card-tilt transition-transform relative overflow-hidden group mt-8 lg:-mt-12">
+        <div class="font-mono text-muted text-sm tracking-widest flex items-center justify-between">
+          <span>[ 03 ]</span> <span class="bg-white/10 px-3 py-1 rounded-full text-white/70">FULFIL</span>
+        </div>
+        <div>
+          <h3 class="text-3xl md:text-5xl tracking-tight mb-4 group-hover:pl-2 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">Last Mile Logistics</h3>
+          <p class="text-white/60 leading-relaxed text-lg max-w-[80%]">Direct-to-customer delivery, freight forwarding, consignment holding, kitting and retail-grade packaging engineered for impact.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Macro Bento Space -->
+  <section class="min-h-[100dvh] bg-canvas py-32 px-4 md:px-12 relative" id="deployments">
+    <div class="max-w-[1400px] mx-auto">
+      <div class="mb-16">
+        <h2 class="text-4xl md:text-6xl font-medium tracking-tighter text-ink mb-6 split-text-reveal">Global Footprints</h2>
+        <p class="text-xl text-muted font-light max-w-[50ch] split-text-reveal delay-100">From Pacific MVNO operators to mission-critical Fortune 500 fleets. We supply the world's most demanding architectures.</p>
+      </div>
+
+      <!-- The Asymmetric Taste Bento Box -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6 auto-rows-[auto]">
+        
+        <!-- Large Hero Card -->
+        <div class="col-span-1 md:col-span-8 glass-panel min-h-[400px] flex flex-col justify-between group bento-up">
+          <div class="bg-ink p-8 h-full flex flex-col justify-between">
+            <div>
+              <div class="font-mono text-white/50 text-xs mb-4">M01 — KIOSK FLEET / AUSTRALIA</div>
+              <h3 class="text-3xl md:text-5xl text-white font-medium tracking-tight w-[70%]">10,000 unit restaurant tablet deployment</h3>
+            </div>
+            <div class="mt-12 flex justify-between items-end">
+              <span class="inline-flex bg-white/10 text-white hover:bg-white/20 transition-colors px-6 py-3 rounded-full text-sm font-medium cursor-pointer">Investigate Case</span>
+              <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center -rotate-45 group-hover:scale-110 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                &rarr;
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Card -->
+        <div class="col-span-1 md:col-span-4 glass-panel min-h-[400px] flex flex-col p-10 justify-between bento-up delay-[50ms]">
+          <div>
+            <div class="font-mono text-muted text-xs mb-4">REAL-TIME SCALE</div>
+            <h3 class="text-3xl text-ink font-medium tracking-tight mb-2">Volume Delivered</h3>
+            <p class="text-muted leading-relaxed">Devices deployed across 4 strategic continents for global tech programs.</p>
+          </div>
+          <div>
+            <span class="text-6xl md:text-8xl font-medium tracking-tighter text-ink block mono-counter">100K+</span>
+            <div class="h-1 w-full bg-slate-100 rounded-full mt-4 overflow-hidden relative">
+              <div class="absolute top-0 left-0 bottom-0 bg-accent progress-bar-anim w-full origin-left scale-x-0"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Narrow Card Left -->
+        <div class="col-span-1 md:col-span-5 glass-panel p-10 flex flex-col justify-between bento-up delay-[100ms]">
+          <div>
+           <div class="font-mono text-muted text-xs mb-4">APPROVED VENDOR</div>
+           <h3 class="text-3xl text-ink font-medium tracking-tight mb-4">Google Partner Since 2016</h3>
+          </div>
+          <p class="text-muted leading-relaxed">Mission-critical internal procurement, Chromebooks, Android devices and accessories processed seamlessly globally.</p>
+        </div>
+
+        <!-- Stretched Card Right -->
+        <div class="col-span-1 md:col-span-7 glass-panel p-10 bg-slate-50 flex flex-col justify-between group bento-up delay-[150ms]">
+           <div class="font-mono text-muted text-xs mb-4">HARDWARE SPECIALIZATION</div>
+           <h3 class="text-4xl text-ink font-medium tracking-tight mb-4 flex items-center gap-4">
+             Starlink & Maritime Endpoints
+             <div class="w-3 h-3 rounded-full bg-accent animate-pulse shadow-[0_0_15px_rgba(194,155,32,0.5)]"></div>
+           </h3>
+           <p class="text-muted leading-relaxed max-w-[45ch]">Satellite internet hardware for remote sites, maritime vectors, and enterprise scale at predictable institutional pricing models.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Immersive Contact Sequence -->
+  <footer class="min-h-[90vh] bg-ink text-white py-32 px-8 md:px-16 flex flex-col justify-between relative overflow-hidden" id="contact">
+    <div class="absolute inset-0 w-full h-[50vh] bg-gradient-to-b from-transparent to-black/50 pointer-events-none opacity-50 z-0"></div>
+    
+    <div class="max-w-[1400px] mx-auto w-full z-10 flex flex-col md:flex-row justify-between items-start gap-12">
+      <div class="footer-reveal">
+        <h2 class="text-5xl md:text-8xl tracking-tight font-medium max-w-[12ch] leading-[0.9]">Let's construct your supply chain.</h2>
+        <p class="text-white/50 text-xl font-light mt-8 max-w-[40ch]">Government agencies, network operators, enterprise technology groups — reach out and our strategic team will connect within 24 hours.</p>
+      </div>
+
+      <div class="glass-panel !bg-white/5 !border-white/10 p-8 md:p-12 w-full max-w-lg footer-reveal delay-[100ms]">
+        <form class="flex flex-col gap-6">
+          <div class="flex gap-4">
+            <input type="text" placeholder="Name" class="w-full bg-transparent border-b border-white/20 pb-3 text-white focus:outline-none focus:border-accent transition-colors placeholder:text-white/30 text-lg">
+            <input type="text" placeholder="Company" class="w-full bg-transparent border-b border-white/20 pb-3 text-white focus:outline-none focus:border-accent transition-colors placeholder:text-white/30 text-lg">
+          </div>
+          <input type="email" placeholder="Email Address" class="w-full bg-transparent border-b border-white/20 pb-3 text-white focus:outline-none focus:border-accent transition-colors placeholder:text-white/30 text-lg mt-2">
+          <textarea placeholder="Describe volume and specification requirements" class="w-full bg-transparent border-b border-white/20 pb-4 text-white focus:outline-none focus:border-accent transition-colors placeholder:text-white/30 text-lg mt-2 resize-none h-24"></textarea>
+          
+          <button class="bg-white text-ink font-semibold py-4 rounded-full mt-4 hover:bg-zinc-200 transition-colors active:scale-95 duration-200 ease-out flex items-center justify-center gap-2">
+            Initiate Engagement <span class="text-lg leading-none">&rarr;</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="max-w-[1400px] mx-auto w-full z-10 flex flex-col md:flex-row justify-between items-end mt-24 text-sm font-mono text-white/40 footer-reveal delay-[200ms]">
+      <div class="flex flex-col gap-2">
+        <span>MIAMI HQ · AMSTERDAM · HONG KONG · DUBAI · SINGAPORE</span>
+        <span>&copy; 2026 Solaris Wireless. Institutional Hardware Provisioning.</span>
+      </div>
+      <div class="flex gap-6 mt-6 md:mt-0">
+        <a href="legal/privacy-policy.html" class="hover:text-white transition-colors">Privacy Paradigm</a>
+        <a href="legal/terms.html" class="hover:text-white transition-colors">Terms of Trade</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

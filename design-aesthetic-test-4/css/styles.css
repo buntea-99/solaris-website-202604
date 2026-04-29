@@ -1,0 +1,32 @@
+/* Deeply Simplified CSS for Apple-like Taste Aesthetics */
+/* Most styling is handled via Tailwind CDN and inline configuration in index.html */
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom 3D Tilt perspective for horizontal parallax cards */
+.group {
+  perspective: 1500px;
+}
+
+/* Focus outlines removed in favor of border colors */
+*:focus {
+  outline: none;
+}
