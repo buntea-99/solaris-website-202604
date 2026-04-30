@@ -42,20 +42,30 @@ cd backend && npm install && npm start
 # One-time Gmail OAuth setup for the contact form (see backend/GMAIL_SETUP.md)
 cd backend && node get-token.js
 
-# Deploy to production (client's Vercel, serves solariswireless.com)
-# .vercel/project.json is permanently linked to the client project.
-vercel --token $VERCEL_TOKEN --prod
-# → aliased https://solaris-wireless-six.vercel.app, mapped to solariswireless.com
+# Deploy to production: just push to the client remote.
+# The client Vercel project (`solaris-website-202604`) is connected to
+# the client GitHub repo (`buntea-99/solaris-website-202604`), so any
+# push to main auto-builds and auto-deploys to solariswireless.com
+# within ~40 seconds. No vercel CLI command needed.
+git push origin main && git push client main
 ```
 
 There is no test suite, no linter, and no build step.
 
 ## Deploy Workflow
 
-The repo has **two GitHub remotes** but **one active Vercel project**:
+The repo has **two GitHub remotes**:
 
-- `origin` → `Vdebug/solaris-wireless-website` (code mirror, no deploy attached)
-- `client` → `buntea-99/solaris-website-202604` (client's account) → `solaris-wireless-six.vercel.app` → `solariswireless.com` (production domain)
+- `origin` → `Vdebug/solaris-wireless-website` (code-mirror backup, no Vercel attached)
+- `client` → `buntea-99/solaris-website-202604` → Vercel project `solaris-website-202604` → `solariswireless.com` (production)
+
+The client Vercel project auto-deploys from `main`. Do NOT run `vercel --prod` manually — the manual deploys go to a different (now-defunct) Vercel project that does NOT serve solariswireless.com. The only correct deploy step is:
+
+```bash
+git add <files> && git commit -m "..." && git push origin main && git push client main
+```
+
+That alone updates production. Watch deploy progress at https://vercel.com/dashboard (client account) or via `vercel ls solaris-website-202604 --token $VERCEL_TOKEN`.
 
 The personal Vercel project (`prj_4NdOrHstG6ORqFvx6HUMjxHnNFWT`) was retired; `.vercel/project.json` is permanently linked to the client project (`prj_LaSpx4qm8mcpzEZQTUOxaUDo30Ak`). Do not switch it back.
 
