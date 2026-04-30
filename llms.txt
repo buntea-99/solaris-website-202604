@@ -111,3 +111,9 @@ A: Call +1 (305) 222-7353 or visit https://solariswireless.com/#contact. The tea
 - Institutional Mobile Device Sourcing: https://solariswireless.com/blog/institutional-mobile-device-sourcing.html
 - IoT Hardware Supply Chain: https://solariswireless.com/blog/iot-hardware-supply-chain.html
 - Starlink Terminal Deployment: https://solariswireless.com/blog/starlink-terminal-deployment.html
+
+## AI Crawler Resources
+
+- Full site content (single Markdown file): https://solariswireless.com/llms-full.txt
+- AI manifest (this file): https://solariswireless.com/llms.txt
+- Sitemap: https://solariswireless.com/sitemap.xml

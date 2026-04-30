@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MDM Enrollment and Bulk Device Provisioning: Enterprise Buyer's Guide (2026) | Solaris Wireless</title>
+<meta name="description" content="Apple Business Manager, Google Zero-Touch enrollment and bulk MDM provisioning explained for enterprise IT directors and procurement managers. How to deploy 100-10,000 devices with zero-touch configuration.">
+<meta name="keywords" content="MDM enrollment bulk devices, Apple Business Manager enrollment, Google Zero-Touch enrollment, bulk device provisioning, enterprise MDM provisioning supplier, Jamf provisioning, Microsoft Intune zero-touch, bulk device MDM setup, enterprise device enrollment">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MDM Enrollment and Bulk Device Provisioning: Enterprise Buyer's Guide (2026)">
+<meta property="og:description" content="Apple Business Manager, Google Zero-Touch and bulk MDM provisioning explained. How enterprises deploy 100-10,000 devices with zero IT staging labour.">
+<meta property="og:url" content="https://solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning.html">
+<meta property="og:site_name" content="Solaris Wireless">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MDM Enrollment and Bulk Device Provisioning: Enterprise Buyer's Guide (2026)">
+<meta name="twitter:description" content="Apple Business Manager, Google Zero-Touch and bulk MDM provisioning explained for enterprise buyers.">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../images/favicon-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="../images/favicon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/blog.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "MDM Enrollment and Bulk Device Provisioning: Enterprise Buyer's Guide (2026)",
+  "description": "Apple Business Manager, Google Zero-Touch enrollment and bulk MDM provisioning explained for enterprise IT directors and procurement managers. How to deploy 100-10,000 devices with zero-touch configuration.",
+  "url": "https://solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning.html",
+  "datePublished": "2026-04-30",
+  "dateModified": "2026-04-30",
+  "author": {
+    "@type": "Organization",
+    "name": "Solaris Wireless",
+    "url": "https://solariswireless.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Solaris Wireless",
+    "url": "https://solariswireless.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://solariswireless.com/images/logo-transparent.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning.html"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is zero-touch MDM enrollment for bulk devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zero-touch MDM enrollment means devices automatically configure themselves with corporate MDM policies on first boot, with no manual IT setup required per device. Apple Business Manager (for iOS/macOS) and Google Zero-Touch (for Android) enable this by pre-registering device serial numbers or IMEIs against an organisation's MDM platform before shipment. The device supplier performs the registration. When the device powers on for the first time, it contacts Apple or Google servers, receives its MDM enrollment assignment, and downloads the corporate profile automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Apple Business Manager and how does it work for bulk iPhone deployment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apple Business Manager (ABM) is Apple's web-based portal for enterprise device management, app distribution and managed Apple IDs. For bulk iPhone deployment, an ABM-authorised supplier registers ordered iPhones in the buyer's ABM account before shipment. Those devices are linked to the organisation's MDM (Jamf, Intune, Mosyle, etc.). On first activation, each iPhone contacts Apple's servers, receives its ABM assignment, and automatically enrolls into the MDM with corporate apps, policies and security settings applied. The employee completes a brief guided setup and receives a fully configured corporate iPhone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Google Zero-Touch enrollment for Android enterprise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Zero-Touch is Android's enterprise enrollment platform, comparable to Apple Business Manager. Device suppliers authorised for Zero-Touch register each Android device's IMEI in the buyer's Zero-Touch portal before shipment. On first boot, the device checks in with Google's Zero-Touch infrastructure, receives its EMM/MDM enrollment configuration, and automatically applies the organisation's Android Enterprise policy. Works with all major Android EMM platforms including VMware Workspace ONE, Microsoft Intune, Jamf, and MobileIron."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which MDM platforms work with Apple Business Manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apple Business Manager is compatible with any MDM platform that supports Apple's Device Enrollment Program (DEP) API. Major compatible MDM platforms include: Jamf Pro and Jamf Now, Microsoft Intune, Mosyle, Kandji, Hexnode, ManageEngine Mobile Device Manager Plus, and SOTI MobiControl. The buyer links their MDM platform to their ABM account, and devices purchased through an ABM-authorised supplier are automatically assigned to that MDM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many IT staff are needed to provision 1,000 enterprise phones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Without zero-touch enrollment (manual MDM setup): an IT technician can manually enroll and configure 15-20 smartphones per day, so 1,000 devices requires 50-67 person-days of IT labour. With Apple Business Manager or Google Zero-Touch pre-enrollment by the device supplier, zero IT staff are needed for per-device setup — each device self-configures on first boot. The 50-67 person-days of IT staging labour is entirely eliminated, saving $20,000-40,000 in IT costs for a 1,000-device rollout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a device supplier pre-install corporate apps before shipment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in two ways. Through ABM or Zero-Touch, apps assigned in the MDM platform are automatically pushed to devices on first boot without supplier involvement — the MDM handles app deployment. For custom OS orders (typically MVNO or specialist enterprise), apps can be pre-installed as system applications during the firmware flashing process before shipment, so they are present even before the device contacts the MDM server. The appropriate method depends on whether the buyer needs ABM/ZTE enrollment or custom OS."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../images/logo-transparent.png" alt="Solaris Wireless" style="height:40px;width:auto;display:block" draggable="false">
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#capabilities">Services</a></li>
+      <li><a href="../index.html#products">Products &amp; Cases</a></li>
+      <li><a href="index.html" class="active">Blog</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:+1-305-222-7353" class="nav-tel">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +1 (305) 222-7353
+      </a>
+      <a href="../index.html#contact" class="nav-cta">Get a Quote</a>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="navMobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#capabilities">Services</a>
+    <a href="../index.html#products">Products &amp; Cases</a>
+    <a href="index.html">Blog</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<article class="blog-post">
+  <div class="blog-hero">
+    <div class="section-wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:1.5rem">
+        <a href="../index.html" style="color:#C49A1A;text-decoration:none;font-size:0.85rem;font-weight:500;font-family:'Manrope',sans-serif">Home</a>
+        <span style="color:#94a3b8;margin:0 0.5rem;font-size:0.85rem">&rsaquo;</span>
+        <a href="index.html" style="color:#C49A1A;text-decoration:none;font-size:0.85rem;font-weight:500;font-family:'Manrope',sans-serif">Blog</a>
+        <span style="color:#94a3b8;margin:0 0.5rem;font-size:0.85rem">&rsaquo;</span>
+        <span style="color:#64748b;font-size:0.85rem;font-weight:500;font-family:'Manrope',sans-serif">MDM Enrollment Guide</span>
+      </nav>
+      <div class="blog-meta">
+        <span class="blog-tag">MDM &amp; Provisioning</span>
+        <span class="blog-date">April 30, 2026</span>
+        <span class="blog-read">14 min read</span>
+      </div>
+      <h1>MDM Enrollment and Bulk Device Provisioning: Enterprise Buyer's Guide</h1>
+      <p class="blog-intro">Apple Business Manager, Google Zero-Touch enrollment and bulk MDM provisioning allow enterprises to deploy hundreds or thousands of smartphones and tablets with zero per-device IT setup time. This guide explains how each enrollment method works, which MDM platforms they support, and how to specify provisioning requirements when sourcing devices from a bulk device supplier.</p>
+    </div>
+  </div>
+
+  <div class="blog-body">
+    <div class="section-wrap blog-layout">
+      <div class="blog-content">
+
+        <h2>What Is MDM Enrollment for Bulk Devices?</h2>
+        <p>Mobile Device Management (MDM) enrollment is the process by which an enterprise device is registered with a corporate MDM platform and receives its organisational configuration — security policies, app assignments, Wi-Fi credentials, email configuration, VPN settings, and device restrictions. For individual devices, IT staff can enrol each device manually. For large enterprise deployments, manual enrollment per device is impractical.</p>
+        <p>Bulk MDM enrollment — also called zero-touch enrollment — pre-registers devices with an organisation's MDM platform before they are shipped. When an employee receives the device and powers it on for the first time, it automatically contacts the MDM server and receives its full configuration without any manual IT intervention. The employee sees a brief guided setup screen and receives a fully configured corporate device.</p>
+        <p>The two dominant zero-touch enrollment platforms are:</p>
+        <ul>
+          <li><strong>Apple Business Manager (ABM):</strong> For iOS, iPadOS and macOS devices</li>
+          <li><strong>Google Zero-Touch:</strong> For Android Enterprise devices</li>
+        </ul>
+        <p>Both platforms require the device supplier to be an authorised reseller who can register devices in the buyer's enrollment account before shipment.</p>
+
+        <h2>Apple Business Manager: How It Works for Bulk iPhone and iPad Deployment</h2>
+        <p>Apple Business Manager (ABM) is Apple's web portal for enterprise device management, Managed Apple ID creation, and volume app licensing. For device deployment, the relevant ABM feature is the Device Enrollment Program (DEP), which enables automatic MDM enrollment.</p>
+
+        <h3>Prerequisites</h3>
+        <p>To use ABM for bulk iPhone deployment:</p>
+        <ol>
+          <li><strong>ABM account:</strong> The organisation must have an Apple Business Manager account. Free to create at business.apple.com using a D-U-N-S number.</li>
+          <li><strong>MDM platform linked to ABM:</strong> The organisation's MDM (Jamf Pro, Microsoft Intune, Mosyle, Kandji, etc.) must be linked to the ABM account. This is done in ABM settings and takes ~15 minutes to configure.</li>
+          <li><strong>MDM enrollment profile:</strong> An MDM enrollment profile must be created that specifies what the device receives on first activation — what apps to install, which restrictions to apply, which configuration profiles to push.</li>
+          <li><strong>ABM-authorised reseller:</strong> Devices must be purchased from an Apple ABM-authorised reseller. Only authorised resellers can add devices to a customer's ABM account. Devices bought through consumer channels cannot be added to ABM.</li>
+        </ol>
+
+        <h3>The Enrollment Process</h3>
+        <p>Once prerequisites are in place, the bulk iPhone deployment process:</p>
+        <ol>
+          <li>The organisation places a device order with an ABM-authorised supplier (such as Solaris Wireless), specifying their ABM customer ID.</li>
+          <li>The supplier registers each device's serial number in the organisation's ABM account before shipping.</li>
+          <li>Devices ship to employee addresses (direct-to-employee) or a distribution point.</li>
+          <li>Employee powers on the device. The device contacts Apple's activation server, which checks ABM and finds an enrollment assignment.</li>
+          <li>The device is redirected to the organisation's MDM platform and automatically enrolls. The MDM pushes the enrollment profile — apps, policies, configuration.</li>
+          <li>The employee completes the brief user-facing setup (language, region, Apple ID if required). Corporate apps appear automatically. The device is ready for work.</li>
+        </ol>
+        <p>Total IT involvement per device: zero. The IT team configures the MDM profile once and the same configuration applies to all devices automatically at first boot.</p>
+
+        <h3>What Can Be Configured via ABM/MDM?</h3>
+        <p>When a device enrolls via ABM and MDM, the MDM platform can configure and enforce:</p>
+        <ul>
+          <li>Passcode policies (minimum length, complexity, timeout)</li>
+          <li>Wi-Fi credentials for corporate networks</li>
+          <li>VPN configuration (Cisco AnyConnect, Pulse Secure, GlobalProtect)</li>
+          <li>Email account configuration (Exchange, Office 365)</li>
+          <li>App installation (managed apps pushed silently from MDM)</li>
+          <li>App restrictions (prevent App Store use, restrict specific apps)</li>
+          <li>Content filtering (web filtering profiles)</li>
+          <li>Feature restrictions (camera, AirDrop, iCloud, screen recording)</li>
+          <li>Device lock and remote wipe capability</li>
+          <li>Certificate deployment for network authentication</li>
+        </ul>
+        <p>The result is a fully locked-down corporate device that meets security policy requirements without any manual per-device IT work.</p>
+
+        <h3>Supervised vs. Unsupervised iOS Devices</h3>
+        <p>Devices enrolled through ABM are automatically placed in Supervised mode (also called DEP-enrolled). Supervised mode provides IT with deeper management capabilities not available on unsupervised (personally-enrolled) devices:</p>
+        <ul>
+          <li>Silent app installation without user prompt</li>
+          <li>Ability to prevent the user from removing the MDM profile</li>
+          <li>Lost Mode (specific to ABM) for lost device location and remote lock</li>
+          <li>Single App Mode for kiosk use cases</li>
+          <li>More granular feature restrictions (e.g., restricting specific Siri capabilities)</li>
+        </ul>
+        <p>ABM-enrolled devices are always supervised. Consumer-enrolled (BYOD) devices are never supervised. This distinction is why enterprise iOS deployments require ABM — supervised mode is critical for enterprise security and management requirements.</p>
+
+        <h2>Google Zero-Touch Enrollment: How It Works for Android Enterprise Deployment</h2>
+        <p>Google Zero-Touch is Android Enterprise's pre-provisioning program, launched in 2017 to provide an equivalent to Apple's ABM. It allows enterprises to pre-configure Android devices for automatic MDM enrollment before they reach employees.</p>
+
+        <h3>Prerequisites</h3>
+        <p>To use Zero-Touch for bulk Android deployment:</p>
+        <ol>
+          <li><strong>Zero-Touch portal access:</strong> The organisation creates a Zero-Touch customer account at enterprise.google.com/zero-touch.</li>
+          <li><strong>EMM/MDM platform:</strong> The MDM platform must be Android Enterprise-certified. Compatible platforms include VMware Workspace ONE, Microsoft Intune, Jamf, MobileIron/Ivanti, ManageEngine, and others.</li>
+          <li><strong>DPC extras configuration:</strong> The Zero-Touch portal requires the organisation to configure the Android Device Policy Client (DPC) extras — essentially a JSON blob that specifies the EMM token and enrollment parameters for the MDM platform.</li>
+          <li><strong>Zero-Touch authorised reseller:</strong> Devices must be purchased from a Zero-Touch authorised reseller, who uploads device IMEIs to the organisation's Zero-Touch portal before shipment. Solaris Wireless is a Google-approved vendor with Zero-Touch reseller authorisation.</li>
+        </ol>
+
+        <h3>The Enrollment Process</h3>
+        <ol>
+          <li>Organisation places an Android device order with a Zero-Touch authorised supplier, providing their Zero-Touch customer ID.</li>
+          <li>The supplier registers each device's IMEI in the organisation's Zero-Touch portal before shipping.</li>
+          <li>Devices ship to employees.</li>
+          <li>Employee powers on the device and connects to Wi-Fi or activates mobile data.</li>
+          <li>Android checks Google's Zero-Touch infrastructure, finds an enrollment configuration for the IMEI, and downloads the DPC (Device Policy Controller) app for the specified MDM platform.</li>
+          <li>The DPC app configures the device with the organisation's MDM enrollment. The MDM pushes apps, policies and configurations.</li>
+          <li>Device is ready. From the employee's perspective: a brief setup screen, then a fully configured corporate Android device.</li>
+        </ol>
+
+        <h3>Android Work Profile vs. Fully Managed Device</h3>
+        <p>Android Enterprise has two primary deployment modes:</p>
+        <ul>
+          <li><strong>Fully Managed Device (Device Owner):</strong> The organisation owns the entire device. IT has complete control. Typically used for company-owned devices issued to employees. Zero-Touch enrollment always results in fully managed mode.</li>
+          <li><strong>Work Profile (Profile Owner):</strong> Creates a separate work container on a personally-owned device (BYOD). Corporate apps and data are isolated in the work profile. Cannot be applied via Zero-Touch — work profile enrollment is user-initiated.</li>
+        </ul>
+        <p>For bulk enterprise deployments with company-owned devices — the scenario where Zero-Touch is relevant — fully managed device mode is the correct deployment model.</p>
+
+        <h2>Samsung Knox Enrollment: What It Is and When to Use It</h2>
+        <p>Samsung Knox Enrollment Service (KME) is Samsung's own pre-provisioning program, predating Google Zero-Touch. For Samsung Galaxy device deployments, KME provides additional Knox-specific features beyond standard Zero-Touch:</p>
+        <ul>
+          <li>Knox Platform for Enterprise (KPE) activation for Samsung-specific security features</li>
+          <li>Pre-configuration of Samsung-specific settings (Knox Guard, Samsung DeX mode)</li>
+          <li>Device blocking capability — KME can prevent device use until MDM enrollment is completed</li>
+        </ul>
+        <p>KME and Zero-Touch are not mutually exclusive. Samsung Galaxy devices can be enrolled via both KME and Zero-Touch simultaneously, with KME handling Samsung-specific configuration and Zero-Touch handling MDM enrollment. For Samsung-heavy deployments (e.g., an enterprise standardising on Galaxy devices), using both provides the richest pre-provisioning capability.</p>
+
+        <h2>The Economic Case for Zero-Touch MDM Provisioning</h2>
+        <p>The IT staging cost of manually enrolling enterprise devices is a significant, often underestimated deployment cost. The numbers:</p>
+
+        <h3>Manual Enrollment Labour Cost</h3>
+        <ul>
+          <li>IT technician throughput: 15-20 devices per day (setup, enrollment, verification)</li>
+          <li>Fully loaded IT labour cost: $400-600/day</li>
+          <li>1,000-device deployment: 50-67 person-days = $20,000-40,000</li>
+          <li>5,000-device deployment: 250-333 person-days = $100,000-200,000</li>
+        </ul>
+
+        <h3>Zero-Touch Enrollment Labour Cost</h3>
+        <ul>
+          <li>IT setup: configure ABM/Zero-Touch portal and MDM profile = 4-8 hours total</li>
+          <li>Per-device IT labour: zero</li>
+          <li>1,000-device or 5,000-device deployment IT cost: effectively zero (4-8 hours configuration, same for both)</li>
+        </ul>
+
+        <h3>Additional Savings: Staging Facility Elimination</h3>
+        <p>Manual staging requires a physical staging facility — a room where IT staff receive bulk shipments, configure devices, and re-ship to employee locations. This facility has real estate cost, inbound freight cost, and re-packaging/re-shipping cost. Direct-to-employee delivery with zero-touch enrollment eliminates the staging facility entirely. Devices ship from the supplier directly to employee desks, already pre-registered for automatic enrollment.</p>
+        <p>For a 2,000-employee rollout with employees in multiple locations, the staging facility elimination alone can save $15,000-30,000 in logistics costs.</p>
+
+        <h2>Choosing an MDM Platform for Bulk Device Deployment</h2>
+        <p>The MDM platform choice affects what provisioning configurations are possible. The major enterprise MDM platforms and their positioning:</p>
+
+        <h3>Jamf (iOS/macOS Focus)</h3>
+        <p>Jamf Pro and Jamf Now are the dominant MDM platforms for Apple device management. If the enterprise runs primarily iPhone and Mac, Jamf provides the deepest Apple management capability including ABM integration, advanced enrollment policies and Apple Silicon Mac management. Jamf is the recommended MDM for Apple-first enterprises.</p>
+
+        <h3>Microsoft Intune (Cross-Platform)</h3>
+        <p>Microsoft Intune (part of Microsoft Endpoint Manager / Microsoft 365) manages both iOS/macOS and Android devices from a single platform. For enterprises already in the Microsoft 365 ecosystem, Intune provides seamless integration with Azure AD, Conditional Access and Microsoft Defender. Supports both ABM (for iOS) and Zero-Touch (for Android). Recommended for enterprises with mixed iOS/Android fleets.</p>
+
+        <h3>VMware Workspace ONE (Cross-Platform, Enterprise Scale)</h3>
+        <p>VMware Workspace ONE (Airwatch) is a comprehensive Unified Endpoint Management (UEM) platform covering mobile, desktop and IoT devices. Preferred by large enterprises (10,000+ devices) requiring advanced unified management across all device types and operating systems. Higher implementation complexity than Jamf or Intune but the most capable platform for heterogeneous large-scale deployments.</p>
+
+        <h3>Mosyle (Apple-Focused, Education and SMB)</h3>
+        <p>Mosyle provides Apple device management for education and small-to-medium businesses. Simpler interface than Jamf with competitive pricing for smaller deployments (under 1,000 Apple devices). Full ABM integration. Recommended for Apple-first organisations that find Jamf's complexity overkill for their scale.</p>
+
+        <h2>Specifying MDM Provisioning Requirements for a Device Order</h2>
+        <p>When requesting MDM provisioning from an institutional device supplier, include these details in the order specification:</p>
+
+        <h3>For ABM/iOS Orders:</h3>
+        <ul>
+          <li>Your Apple Business Manager Organisation ID (shown in ABM settings)</li>
+          <li>Your MDM platform (Jamf, Intune, Mosyle, etc.)</li>
+          <li>Which MDM enrollment profile to assign (if multiple profiles exist in your MDM)</li>
+          <li>Whether devices should be enrolled in Supervised mode (always yes for ABM purchases)</li>
+          <li>Any specific asset tag or device naming requirements for IMEI-to-employee assignment</li>
+        </ul>
+
+        <h3>For Zero-Touch/Android Orders:</h3>
+        <ul>
+          <li>Your Zero-Touch Customer ID</li>
+          <li>Your EMM/MDM platform and the DPC extras JSON for your enrollment configuration</li>
+          <li>Android Enterprise mode: Fully Managed Device (typical) vs. Dedicated Device (kiosk)</li>
+          <li>Whether Samsung KME is also required (for Samsung Galaxy orders)</li>
+          <li>Any per-device IMEI-to-asset-tag mapping requirements</li>
+        </ul>
+
+        <h3>For Custom OS (MVNO and Specialist Enterprise):</h3>
+        <ul>
+          <li>Base OS version and OEM model for the custom build</li>
+          <li>App manifest (apps to pre-install as system apps)</li>
+          <li>Carrier configuration: APN, VoLTE, voicemail settings</li>
+          <li>SIM lock carrier codes if applicable</li>
+          <li>Branding assets: boot animation, wallpaper, launcher icon if applicable</li>
+          <li>Validation environment: test SIM and test network access for QA verification</li>
+        </ul>
+
+        <h2>Solaris Wireless MDM Provisioning Capabilities</h2>
+        <p>Solaris Wireless provides the following provisioning services for institutional device orders:</p>
+        <ul>
+          <li><strong>Apple Business Manager enrollment</strong> — iPhones and iPads registered in customer ABM accounts before shipment, compatible with all ABM-linked MDM platforms</li>
+          <li><strong>Google Zero-Touch enrollment</strong> — Android devices registered in customer Zero-Touch portals before shipment; Solaris is a Google-approved vendor since 2016</li>
+          <li><strong>Samsung Knox Enrollment Service</strong> — Samsung Galaxy devices enrolled via KME for organisations using Samsung Knox management</li>
+          <li><strong>Custom OS flashing</strong> — custom Android ROM builds for MVNO and specialist enterprise programmes</li>
+          <li><strong>SIM lock provisioning</strong> — carrier-specific SIM lock for MVNO subscriber devices</li>
+          <li><strong>App pre-installation</strong> — system app pre-installation for custom OS orders</li>
+          <li><strong>Asset tagging</strong> — physical asset tags and IMEI-to-employee assignment lists for enterprise asset management</li>
+        </ul>
+        <p>Solaris has provisioned 10,000+ devices for institutional buyers including enterprise programmes, MVNO operators and government agencies. <a href="../products/mdm-device-provisioning.html">MDM device provisioning services</a> provides a full capability overview.</p>
+
+        <h2>Frequently Asked Questions: MDM Enrollment and Bulk Provisioning</h2>
+
+        <div class="faq-section">
+          <div class="faq-item">
+            <h3>What is zero-touch MDM enrollment for bulk devices?</h3>
+            <p>Zero-touch enrollment pre-registers device serial numbers or IMEIs with a corporate MDM platform before shipment, so devices automatically configure themselves on first boot with no manual IT setup. Apple Business Manager handles this for iOS/macOS; Google Zero-Touch handles it for Android. Both require the device supplier to be an authorised reseller for the respective enrollment platform.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do I need an Apple Business Manager account to buy iPhones in bulk?</h3>
+            <p>You need an ABM account specifically to use zero-touch enrollment (DEP). You can technically purchase iPhones in bulk without ABM, but you lose the automatic enrollment capability and must manually enroll each device. For any enterprise deployment above 20-30 devices, ABM enrollment is strongly recommended. Creating an ABM account is free and takes about 30 minutes with a D-U-N-S number.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What MDM platforms work with Apple Business Manager?</h3>
+            <p>Any MDM platform that supports Apple's DEP API is compatible with ABM. Major platforms: Jamf Pro, Jamf Now, Microsoft Intune, Mosyle, Kandji, Hexnode, ManageEngine MDM, SOTI MobiControl. The MDM platform is linked to your ABM account in settings, then devices purchased through ABM-authorised resellers auto-enroll into that MDM.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How many IT staff are needed to provision 1,000 enterprise phones?</h3>
+            <p>With ABM or Zero-Touch pre-enrollment by the supplier: zero IT staff per device, just 4-8 hours to configure the MDM profile once. Without zero-touch: an IT technician handles 15-20 devices/day, so 1,000 devices requires 50-67 person-days ($20,000-40,000 at standard IT labour cost). Zero-touch eliminates this entirely.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I use Google Zero-Touch for Samsung Galaxy devices?</h3>
+            <p>Yes. Google Zero-Touch works with Samsung Galaxy devices purchased from an authorised Zero-Touch reseller. Additionally, Samsung Galaxy devices can also use Samsung Knox Enrollment Service (KME) simultaneously, providing both standard Android Enterprise enrollment (via Zero-Touch) and Samsung Knox-specific features (via KME). Using both together is recommended for Samsung-heavy enterprise deployments.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What is the difference between ABM enrollment and custom OS flashing?</h3>
+            <p>ABM enrollment registers the device's serial number with Apple's servers for automatic MDM enrollment on first boot — the device OS is unmodified. Custom OS flashing replaces or modifies the device's firmware with a custom build before shipment. ABM enrollment is the standard enterprise approach (no firmware modification). Custom OS flashing is used by MVNOs needing carrier branding/SIM lock and specialist enterprises needing modified firmware. They serve different purposes and typically apply to different buyer types.</p>
+          </div>
+        </div>
+
+        <div class="blog-cta-box">
+          <h3>Need ABM enrollment or Zero-Touch provisioning for your device order?</h3>
+          <p>Solaris Wireless provides Apple Business Manager enrollment, Google Zero-Touch, Knox Enrollment Service and custom OS provisioning as standard services for institutional device orders. Tell us your requirements and we will respond within one business day.</p>
+          <a href="../index.html#contact" class="btn-primary">Discuss Provisioning Requirements</a>
+        </div>
+
+        <div class="blog-related">
+          <h3>Related Resources</h3>
+          <div class="related-grid">
+            <a href="../products/mdm-device-provisioning.html" class="related-card">
+              <div class="related-title">MDM Provisioning Services</div>
+              <div class="related-desc">ABM, Zero-Touch, Knox and custom OS provisioning for all device types</div>
+            </a>
+            <a href="../products/enterprise-phone-supplier.html" class="related-card">
+              <div class="related-title">Enterprise Phone Supplier</div>
+              <div class="related-desc">Bulk iPhone and Android procurement with ABM/Zero-Touch enrollment</div>
+            </a>
+            <a href="../products/mvno-phone-supplier.html" class="related-card">
+              <div class="related-title">MVNO Phone Supplier</div>
+              <div class="related-desc">Custom OS and SIM lock provisioning for MVNO programmes</div>
+            </a>
+            <a href="../case-studies/ritual-kiosk-deployment.html" class="related-card">
+              <div class="related-title">Ritual Kiosk Deployment</div>
+              <div class="related-desc">iPad kiosk provisioning case study for a global restaurant programme</div>
+            </a>
+            <a href="institutional-device-procurement-guide.html" class="related-card">
+              <div class="related-title">Procurement Guide</div>
+              <div class="related-desc">Complete guide to institutional device procurement including TCO analysis</div>
+            </a>
+            <a href="mvno-wholesale-android-sourcing.html" class="related-card">
+              <div class="related-title">MVNO Android Sourcing</div>
+              <div class="related-desc">Custom OS flashing and wholesale Android sourcing for MVNO operators</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="blog-sidebar">
+        <div class="sidebar-toc">
+          <div class="sidebar-toc-title">In this guide</div>
+          <ul>
+            <li><a href="#" onclick="return false">What Is MDM Enrollment?</a></li>
+            <li><a href="#" onclick="return false">Apple Business Manager</a></li>
+            <li><a href="#" onclick="return false">Google Zero-Touch</a></li>
+            <li><a href="#" onclick="return false">Samsung Knox Enrollment</a></li>
+            <li><a href="#" onclick="return false">Economic Case for Zero-Touch</a></li>
+            <li><a href="#" onclick="return false">Choosing an MDM Platform</a></li>
+            <li><a href="#" onclick="return false">Specifying Provisioning Requirements</a></li>
+            <li><a href="#" onclick="return false">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-cta">
+          <div class="sidebar-cta-title">MDM provisioning enquiries</div>
+          <p>ABM enrollment, Zero-Touch, Knox and custom OS provisioning for institutional device orders.</p>
+          <a href="../index.html#contact" class="btn-primary" style="display:block;text-align:center">Get a Quote</a>
+          <a href="tel:+1-305-222-7353" style="display:block;text-align:center;margin-top:0.75rem;color:#C49A1A;font-family:'Manrope',sans-serif;font-size:0.9rem;font-weight:600">+1 (305) 222-7353</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</article>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo"><img src="../images/logo-footer.png" alt="Solaris Wireless" width="160" height="44" loading="lazy" style="height:44px;width:auto" draggable="false"></div>
+      <p>Global electronic device supplier and distributor since 2013. Headquartered in Miami, FL with strategic partners across four continents. Google-approved vendor since 2016.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links-list">
+        <li><a href="../index.html#about">About Solaris</a></li>
+        <li><a href="../index.html#capabilities">Services</a></li>
+        <li><a href="../index.html#products">Products &amp; Cases</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Products</div>
+      <ul class="footer-links-list">
+        <li><a href="../products/mdm-device-provisioning.html">MDM Provisioning</a></li>
+        <li><a href="../products/enterprise-phone-supplier.html">Enterprise Phones</a></li>
+        <li><a href="../products/mvno-phone-supplier.html">MVNO Phone Supplier</a></li>
+        <li><a href="../products/bulk-android-phones.html">Bulk Android Phones</a></li>
+        <li><a href="../products/mobile-devices.html">Mobile Devices</a></li>
+        <li><a href="../products/laptops.html">Laptops</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Global Network</div>
+      <ul class="footer-links-list">
+        <li><a href="../index.html#presence">Miami, Florida (HQ)</a></li>
+        <li><a href="../index.html#presence">Netherlands</a></li>
+        <li><a href="../index.html#presence">Dubai, UAE</a></li>
+        <li><a href="../index.html#presence">Hong Kong</a></li>
+        <li><a href="../index.html#presence">Singapore</a></li>
+      </ul>
+        </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 Solaris Wireless. All rights reserved.</span>
+    <span class="footer-links-legal"><a href="../legal/privacy-policy.html">Privacy Policy</a> &middot; <a href="../legal/terms.html">Terms</a></span>
+    <span class="footer-hq">Miami, Florida, United States</span>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
