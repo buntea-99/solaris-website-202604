@@ -211,7 +211,10 @@ body {
    4. Navigation (including mobile hamburger menu)
    -------------------------------------------------------------------------- */
 
-nav {
+/* Top navigation bar: only the direct-child <nav> of <body> gets the
+   fixed white header treatment. Other <nav> elements on the page
+   (breadcrumb, footer-nav, etc.) must remain inline-flow. */
+body > nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -220,6 +223,24 @@ nav {
   background: rgba(255, 255, 255, 0.97);
   border-bottom: 1px solid var(--rule);
   backdrop-filter: blur(12px);
+}
+
+/* Defensive reset: nested <nav> (breadcrumb, footer-nav, etc.) must
+   stay in normal document flow with no background. Prevents legacy
+   bare-`nav` rules or third-party styles from ripping them out. */
+nav.breadcrumb,
+nav.footer-nav,
+nav.article-hero-meta,
+.blog-hero nav,
+.article-hero nav,
+.hero nav,
+section nav,
+footer nav {
+  position: static;
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
+  z-index: auto;
 }
 
 .nav-inner {
