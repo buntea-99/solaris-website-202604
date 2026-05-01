@@ -127,3 +127,4 @@ The on-page work is comprehensive (33+ pages, schema, llms.txt, og:image, breadc
 After the off-site actions are seeded, monitor citation appearance:
 - Ask Perplexity, ChatGPT and Claude weekly for queries like "wholesale Android phones for MVNOs USA", "Google approved vendor electronic devices", "bulk phone supplier institutional", "Starlink wholesale distributor". Track when Solaris Wireless first appears in citations or answer body.
 - In Google Search Console, watch for impressions on the BOFU blog posts and solution pages. The first 4-6 weeks should show indexing; ranking improvements typically begin at week 8-12 after directory citations are live.
+
