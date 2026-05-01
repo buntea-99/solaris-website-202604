@@ -101,6 +101,11 @@ A: Call +1 (305) 222-7353 or visit https://solariswireless.com/#contact. The tea
 - ITAR-Compliant Electronic Device Supplier (defence): https://solariswireless.com/itar-compliant-device-supplier
 - Starlink Authorized Reseller (Business, Maritime, government wholesale): https://solariswireless.com/starlink-authorized-reseller
 - Zero-Touch Enrollment Reseller (ABM, Google Zero-Touch, Knox): https://solariswireless.com/zero-touch-enrollment-reseller
+- Wholesale iPhone Enterprise Supplier (ABM auto-enrolment): https://solariswireless.com/products/wholesale-iphone-enterprise
+
+### Service Pages
+- Device Kitting and Fulfillment Services: https://solariswireless.com/services/device-kitting-fulfillment
+- Device-as-a-Service (DaaS) Provider: https://solariswireless.com/services/device-as-a-service
 
 ### Vendor Comparison Pages (alternatives co-mention)
 - CDW Alternatives: https://solariswireless.com/alternatives/cdw
