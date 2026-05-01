@@ -85,7 +85,14 @@ A: Call +1 (305) 222-7353 or visit https://solariswireless.com/#contact. The tea
 ## Pages
 
 - Home: https://solariswireless.com/
-- About / Who we are: https://solariswireless.com/#about
+- About Solaris Wireless (founding 2013, services, ICP, compliance): https://solariswireless.com/about
+- Clients (Google, Republic Wireless, Ritual.co, U.S. Government, Pacific MVNOs, Fortune 500): https://solariswireless.com/clients
+- Press and Company Milestones (founded 2013, Google approved 2016, 100K+ units): https://solariswireless.com/press
+- FAQ (204 questions on bulk device procurement, MDM, Starlink, government compliance): https://solariswireless.com/faq
+
+### Research (Primary Original Data)
+- Wholesale Android Handset Pricing Trends 2024-2026 (methodology and findings): https://solariswireless.com/research/wholesale-android-handset-pricing-trends-2024-2026
+- MVNO Handset Procurement Survey 2026 (n=87 operators, regional breakdown): https://solariswireless.com/research/mvno-handset-procurement-survey-2026
 - Services / What we do: https://solariswireless.com/#capabilities
 - Products & case studies: https://solariswireless.com/#products
 - Contact: https://solariswireless.com/#contact
