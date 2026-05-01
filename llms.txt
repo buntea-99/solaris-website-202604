@@ -91,8 +91,26 @@ A: Call +1 (305) 222-7353 or visit https://solariswireless.com/#contact. The tea
 - FAQ (204 questions on bulk device procurement, MDM, Starlink, government compliance): https://solariswireless.com/faq
 
 ### Research (Primary Original Data)
+- Research Index: https://solariswireless.com/research/
 - Wholesale Android Handset Pricing Trends 2024-2026 (methodology and findings): https://solariswireless.com/research/wholesale-android-handset-pricing-trends-2024-2026
 - MVNO Handset Procurement Survey 2026 (n=87 operators, regional breakdown): https://solariswireless.com/research/mvno-handset-procurement-survey-2026
+
+### Exact-Match Topic Pages (canonical answer hubs)
+- Google-Approved Vendor for Electronic Devices: https://solariswireless.com/google-approved-vendor
+- TAA-Compliant Mobile Phone Supplier (federal procurement): https://solariswireless.com/taa-compliant-mobile-supplier
+- ITAR-Compliant Electronic Device Supplier (defence): https://solariswireless.com/itar-compliant-device-supplier
+- Starlink Authorized Reseller (Business, Maritime, government wholesale): https://solariswireless.com/starlink-authorized-reseller
+- Zero-Touch Enrollment Reseller (ABM, Google Zero-Touch, Knox): https://solariswireless.com/zero-touch-enrollment-reseller
+
+### Vendor Comparison Pages (alternatives co-mention)
+- CDW Alternatives: https://solariswireless.com/alternatives/cdw
+- Insight Enterprises Alternatives: https://solariswireless.com/alternatives/insight-enterprises
+- Connection (PC Connection) Alternatives: https://solariswireless.com/alternatives/pc-connection
+
+### Feeds and Manifests
+- Blog RSS feed: https://solariswireless.com/blog/feed.xml
+- AI crawler manifest: https://solariswireless.com/.well-known/ai.txt
+- Security contact: https://solariswireless.com/.well-known/security.txt
 - Services / What we do: https://solariswireless.com/#capabilities
 - Products & case studies: https://solariswireless.com/#products
 - Contact: https://solariswireless.com/#contact

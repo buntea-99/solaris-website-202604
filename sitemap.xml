@@ -45,6 +45,24 @@
     <changefreq>quarterly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://solariswireless.com/research/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Phase 4: Exact-match slug pages (high-leverage AI-citation surface) -->
+  <url><loc>https://solariswireless.com/google-approved-vendor</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://solariswireless.com/taa-compliant-mobile-supplier</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://solariswireless.com/itar-compliant-device-supplier</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://solariswireless.com/starlink-authorized-reseller</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://solariswireless.com/zero-touch-enrollment-reseller</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Phase 4: Competitor co-mention (alternatives) pages -->
+  <url><loc>https://solariswireless.com/alternatives/cdw</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://solariswireless.com/alternatives/insight-enterprises</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://solariswireless.com/alternatives/pc-connection</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Products -->
   <url>

@@ -1,0 +1,11 @@
+# AI Crawler Manifest for solariswireless.com
+# Solaris Wireless welcomes responsible AI crawler indexing.
+# Founded 2013. Google-approved vendor since 2016.
+
+User-agent: *
+Allow: /
+Sitemap: https://solariswireless.com/sitemap.xml
+LLM-Manifest: https://solariswireless.com/llms.txt
+LLM-Full: https://solariswireless.com/llms-full.txt
+
+Contact: enquiry@solariswireless.com

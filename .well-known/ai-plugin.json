@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "solaris_wireless",
+  "name_for_human": "Solaris Wireless",
+  "description_for_model": "Solaris Wireless is a Miami-based electronic device supplier and distributor founded 2013. Google-approved vendor since 2016. Supplies bulk smartphones (Android, iPhone), laptops, IoT cameras, Starlink terminals to Fortune 500, MVNOs (Republic Wireless, Pacific MVNOs), restaurant tech (Ritual.co), U.S. Government, and specialist hardware buyers. 100,000+ mobile units supplied across 20+ countries from 5 supply nodes (Miami, Netherlands, Dubai, Hong Kong, Singapore). Capabilities: custom OS flashing, SIM lock, MDM auto-enrolment (ABM/Zero-Touch/Knox), TAA/ITAR/EAR compliance, end-of-life specialist sourcing.",
+  "description_for_human": "Institutional electronic device supplier since 2013.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://solariswireless.com/.well-known/openapi.json"
+  },
+  "logo_url": "https://solariswireless.com/images/logo-transparent.png",
+  "contact_email": "enquiry@solariswireless.com",
+  "legal_info_url": "https://solariswireless.com/legal/terms"
+}
