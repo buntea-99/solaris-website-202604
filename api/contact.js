@@ -242,8 +242,11 @@ module.exports = async function handler(req, res) {
       message:      clean(message),
     };
 
-    // Run all three operations in parallel
-    await Promise.all([
+    // Run all three operations in parallel.
+    // Use allSettled so a failure in any one (e.g. Sheets API hiccup or
+    // missing SHEET_ID) does not block the other two. We still log
+    // failures and only return 500 if EVERYTHING failed.
+    const tasks = await Promise.allSettled([
       logToSheet(d),
       sendEmail({
         to: process.env.NOTIFY_EMAIL,
@@ -257,11 +260,31 @@ module.exports = async function handler(req, res) {
       }),
     ]);
 
-    console.log(`[${new Date().toISOString()}] Lead: ${d.firstName} ${d.lastName} <${d.email}>`);
-    res.status(200).json({ success: true });
+    const labels = ['sheets-log', 'notify-email', 'lead-reply'];
+    const failures = [];
+    tasks.forEach((t, i) => {
+      if (t.status === 'rejected') {
+        failures.push(`${labels[i]}: ${t.reason && t.reason.message ? t.reason.message : t.reason}`);
+      }
+    });
+
+    if (failures.length === tasks.length) {
+      // Total failure: nothing got through. Return 500 so the form shows the
+      // error UI and the lead can retry.
+      console.error(`[${new Date().toISOString()}] Contact TOTAL FAIL ${d.email}: ${failures.join(' | ')}`);
+      return res.status(500).json({ success: false, error: 'Unable to process your enquiry. Please try again.' });
+    }
+
+    if (failures.length > 0) {
+      console.warn(`[${new Date().toISOString()}] Contact partial fail ${d.email}: ${failures.join(' | ')}`);
+    } else {
+      console.log(`[${new Date().toISOString()}] Lead OK: ${d.firstName} ${d.lastName} <${d.email}>`);
+    }
+
+    return res.status(200).json({ success: true });
 
   } catch (err) {
-    console.error('Contact error:', err.message);
+    console.error('Contact handler error:', err && err.message ? err.message : err);
     res.status(500).json({ success: false, error: 'Unable to process your enquiry. Please try again.' });
   }
 };
