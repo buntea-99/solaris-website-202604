@@ -298,4 +298,16 @@
   <url><loc>https://www.solariswireless.com/manufacturers/dell-latitude-bulk-supplier</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.solariswireless.com/manufacturers/hp-elitebook-enterprise</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.solariswireless.com/manufacturers/sonim-rugged-distributor</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Phase 6 Batch C: Services hub + service pages + sector pages + comparisons -->
+  <url><loc>https://www.solariswireless.com/services/</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.solariswireless.com/services/supply-sourcing</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.solariswireless.com/services/order-fulfilment</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.solariswireless.com/solutions/enterprise-procurement</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.solariswireless.com/solutions/fortune-500</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.solariswireless.com/solutions/silicon-valley-tech</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.solariswireless.com/solutions/medical-institutional-buyers</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.solariswireless.com/comparisons/iphone-vs-samsung-enterprise</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.solariswireless.com/comparisons/sonim-vs-kyocera-rugged</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://www.solariswireless.com/comparisons/macbook-vs-thinkpad-bulk-procurement</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 </urlset>
