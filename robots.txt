@@ -86,10 +86,10 @@ User-agent: MarmosetBot
 Allow: /
 
 # Sitemaps and AI manifest
-Sitemap: https://solariswireless.com/sitemap.xml
-Host: https://solariswireless.com
+Sitemap: https://www.solariswireless.com/sitemap.xml
+Host: https://www.solariswireless.com
 
 # AI crawler resources
 # Full site content for LLM indexing:
-# https://solariswireless.com/llms-full.txt
-# AI manifest: https://solariswireless.com/llms.txt
+# https://www.solariswireless.com/llms-full.txt
+# AI manifest: https://www.solariswireless.com/llms.txt

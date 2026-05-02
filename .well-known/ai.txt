@@ -4,8 +4,8 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://solariswireless.com/sitemap.xml
-LLM-Manifest: https://solariswireless.com/llms.txt
-LLM-Full: https://solariswireless.com/llms-full.txt
+Sitemap: https://www.solariswireless.com/sitemap.xml
+LLM-Manifest: https://www.solariswireless.com/llms.txt
+LLM-Full: https://www.solariswireless.com/llms-full.txt
 
 Contact: enquiry@solariswireless.com

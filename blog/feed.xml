@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solaris Wireless Blog</title>
-    <link>https://solariswireless.com/blog/</link>
-    <atom:link href="https://solariswireless.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.solariswireless.com/blog/</link>
+    <atom:link href="https://www.solariswireless.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description>Institutional electronic device procurement insights from Solaris Wireless. Founded 2013, Google-approved vendor since 2016.</description>
     <language>en-US</language>
     <copyright>Copyright 2026, Solaris Wireless</copyright>
@@ -11,129 +11,129 @@
     <generator>Solaris Wireless static site</generator>
     <item>
       <title>The Complete Guide to Institutional Device Procurement (2026)</title>
-      <link>https://solariswireless.com/blog/institutional-device-procurement-guide</link>
+      <link>https://www.solariswireless.com/blog/institutional-device-procurement-guide</link>
       <description>How enterprises, MVNOs and government agencies procure electronic devices at institutional scale. TCO models, vendor selection, MDM provisioning.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/institutional-device-procurement-guide</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/institutional-device-procurement-guide</guid>
     </item>
     <item>
       <title>Custom OS Flashing for Bulk Phones: What MVNOs and Enterprises Need to Know (2026)</title>
-      <link>https://solariswireless.com/blog/custom-os-flashing-bulk-phones</link>
+      <link>https://www.solariswireless.com/blog/custom-os-flashing-bulk-phones</link>
       <description>Custom OS flashing loads modified Android firmware onto smartphones before shipment. Learn how MVNOs, enterprises and kiosk operators use custom OS flashing.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/custom-os-flashing-bulk-phones</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/custom-os-flashing-bulk-phones</guid>
     </item>
     <item>
       <title>What Solaris Does That a Consumer Phone Retailer Cannot</title>
-      <link>https://solariswireless.com/blog/bulk-phone-supplier-vs-consumer-store</link>
+      <link>https://www.solariswireless.com/blog/bulk-phone-supplier-vs-consumer-store</link>
       <description>Solaris Wireless supplies institutional buyers with bulk phones plus MDM enrolment, custom OS, SIM lock, compliance documentation and direct-to-employee fulfilment, capabilities consumer retailers (Best Buy, carrier stores) cannot provide.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/bulk-phone-supplier-vs-consumer-store</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/bulk-phone-supplier-vs-consumer-store</guid>
     </item>
     <item>
       <title>ITAR/EAR-Compliant Device Supply: How Solaris Handles Defence Procurement</title>
-      <link>https://solariswireless.com/blog/itar-compliant-electronic-device-suppliers</link>
+      <link>https://www.solariswireless.com/blog/itar-compliant-electronic-device-suppliers</link>
       <description>Solaris Wireless handles ITAR/EAR-controlled electronic device deployment for U.S. Government, defence agencies and allied nations with full chain-of-custody, DSP-83 documentation and 72-hour rapid response.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/itar-compliant-electronic-device-suppliers</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/itar-compliant-electronic-device-suppliers</guid>
     </item>
     <item>
       <title>How to Source End-of-Life and Hard-to-Find Electronic Components (2026)</title>
-      <link>https://solariswireless.com/blog/sourcing-end-of-life-electronic-components</link>
+      <link>https://www.solariswireless.com/blog/sourcing-end-of-life-electronic-components</link>
       <description>How government agencies, OEMs and enterprises source end-of-life (EOL) electronic components and discontinued devices. EOL procurement strategy.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/sourcing-end-of-life-electronic-components</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/sourcing-end-of-life-electronic-components</guid>
     </item>
     <item>
       <title>MDM Enrollment and Bulk Device Provisioning: Enterprise Buyer&#x27;s Guide (2026)</title>
-      <link>https://solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning</link>
+      <link>https://www.solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning</link>
       <description>Apple Business Manager, Google Zero-Touch enrollment and bulk MDM provisioning explained for enterprise IT directors and procurement managers.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning</guid>
     </item>
     <item>
       <title>Wholesale Android Phones for MVNOs: Complete Sourcing Guide (2026)</title>
-      <link>https://solariswireless.com/blog/mvno-wholesale-android-sourcing</link>
+      <link>https://www.solariswireless.com/blog/mvno-wholesale-android-sourcing</link>
       <description>How MVNO operators source wholesale Android phones with custom OS flashing, SIM lock provisioning, carrier branding and bulk fulfilment.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/mvno-wholesale-android-sourcing</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/mvno-wholesale-android-sourcing</guid>
     </item>
     <item>
       <title>Starlink Terminal Wholesale: How Businesses and Governments Source Satellite Connectivity (2026)</title>
-      <link>https://solariswireless.com/blog/starlink-terminal-wholesale-guide</link>
+      <link>https://www.solariswireless.com/blog/starlink-terminal-wholesale-guide</link>
       <description>How enterprises, governments and maritime operators buy Starlink terminals in bulk at wholesale pricing. Starlink Standard vs Business vs Maritime.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/starlink-terminal-wholesale-guide</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/starlink-terminal-wholesale-guide</guid>
     </item>
     <item>
       <title>Starlink Business vs Maritime vs Standard: Comparison Guide for Institutional Buyers (2026)</title>
-      <link>https://solariswireless.com/blog/starlink-business-vs-maritime-vs-standard-comparison</link>
+      <link>https://www.solariswireless.com/blog/starlink-business-vs-maritime-vs-standard-comparison</link>
       <description>Side-by-side comparison of Starlink Standard, Business and Maritime kits for institutional and government buyers, with pricing, throughput, mobility and SLA differences.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/starlink-business-vs-maritime-vs-standard-comparison</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/starlink-business-vs-maritime-vs-standard-comparison</guid>
     </item>
     <item>
       <title>Bulk iPhone Supplier for Enterprise: How Solaris Wireless Ships ABM-Enrolled Devices</title>
-      <link>https://solariswireless.com/blog/bulk-iphone-supplier-enterprise-procurement</link>
+      <link>https://www.solariswireless.com/blog/bulk-iphone-supplier-enterprise-procurement</link>
       <description>Solaris Wireless supplies bulk iPhones to enterprise IT teams through Apple Authorised Reseller channels with ABM auto-enrolment, AppleCare for Business and direct-to-employee fulfilment.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/bulk-iphone-supplier-enterprise-procurement</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/bulk-iphone-supplier-enterprise-procurement</guid>
     </item>
     <item>
       <title>What Is a Google-Approved Device Vendor and Why It Matters for Institutional Buyers</title>
-      <link>https://solariswireless.com/blog/google-approved-vendor-electronic-devices</link>
+      <link>https://www.solariswireless.com/blog/google-approved-vendor-electronic-devices</link>
       <description>A Google-approved vendor for electronic devices has passed Google&#x27;s rigorous supplier qualification process. Learn what Google vendor approval means.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/google-approved-vendor-electronic-devices</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/google-approved-vendor-electronic-devices</guid>
     </item>
     <item>
       <title>Federal Phone Procurement: How Solaris Wireless Supports GSA, NASPO and Direct-to-Agency Buying</title>
-      <link>https://solariswireless.com/blog/gsa-listed-phone-distributors-2026</link>
+      <link>https://www.solariswireless.com/blog/gsa-listed-phone-distributors-2026</link>
       <description>Solaris Wireless supplies federal, state and local government agencies with TAA-compliant smartphones, FIPS-validated encryption, CAC/PIV configuration and direct-to-end-user fulfilment.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/gsa-listed-phone-distributors-2026</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/gsa-listed-phone-distributors-2026</guid>
     </item>
     <item>
       <title>Zero-Touch Android Deployment: How Solaris Ships Pre-Enrolled Devices</title>
-      <link>https://solariswireless.com/blog/zero-touch-deployment-bulk-android-providers</link>
+      <link>https://www.solariswireless.com/blog/zero-touch-deployment-bulk-android-providers</link>
       <description>Solaris Wireless ships bulk Android devices pre-registered in your Google Zero-Touch tenant so they auto-enrol into your MDM on first power-on. Direct-to-employee, with custom OS available.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/zero-touch-deployment-bulk-android-providers</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/zero-touch-deployment-bulk-android-providers</guid>
     </item>
     <item>
       <title>MDM Provisioning Comparison: Apple Business Manager vs Google Zero-Touch vs Samsung Knox (2026)</title>
-      <link>https://solariswireless.com/blog/mdm-providers-comparison-abm-vs-zero-touch-vs-knox</link>
+      <link>https://www.solariswireless.com/blog/mdm-providers-comparison-abm-vs-zero-touch-vs-knox</link>
       <description>Side-by-side comparison of Apple Business Manager DEP, Google Zero-Touch Enrollment and Samsung Knox Mobile Enrollment for institutional bulk device provisioning.</description>
       <pubDate>Thu, 30 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/mdm-providers-comparison-abm-vs-zero-touch-vs-knox</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/mdm-providers-comparison-abm-vs-zero-touch-vs-knox</guid>
     </item>
     <item>
       <title>The Complete Guide to Institutional Mobile Device Sourcing in 2026</title>
-      <link>https://solariswireless.com/blog/institutional-mobile-device-sourcing</link>
+      <link>https://www.solariswireless.com/blog/institutional-mobile-device-sourcing</link>
       <description>How government agencies, MVNOs and enterprises source smartphones at institutional scale, OEM relationships, carrier configuration, SIM-lock provisioning.</description>
       <pubDate>Fri, 10 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/institutional-mobile-device-sourcing</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/institutional-mobile-device-sourcing</guid>
     </item>
     <item>
       <title>Enterprise Laptop Procurement: How to Source at Scale Without Overpaying</title>
-      <link>https://solariswireless.com/blog/enterprise-laptop-procurement</link>
+      <link>https://www.solariswireless.com/blog/enterprise-laptop-procurement</link>
       <description>A practical guide to enterprise laptop procurement at scale: TCO reduction strategies, multi-OEM sourcing, configuration standardisation, MDM pre-enrolment.</description>
       <pubDate>Wed, 08 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/enterprise-laptop-procurement</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/enterprise-laptop-procurement</guid>
     </item>
     <item>
       <title>IoT Hardware Supply Chains: From Smart Cameras to Industrial Sensors</title>
-      <link>https://solariswireless.com/blog/iot-hardware-supply-chain</link>
+      <link>https://www.solariswireless.com/blog/iot-hardware-supply-chain</link>
       <description>Expert analysis of IoT hardware supply chain challenges, smart cameras, industrial sensors, edge computing devices and institutional procurement strategies for.</description>
       <pubDate>Sun, 05 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/iot-hardware-supply-chain</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/iot-hardware-supply-chain</guid>
     </item>
     <item>
       <title>Starlink Terminal Deployment at Scale</title>
-      <link>https://solariswireless.com/blog/starlink-terminal-deployment</link>
+      <link>https://www.solariswireless.com/blog/starlink-terminal-deployment</link>
       <description>How to source, configure and deploy Starlink terminals at institutional scale for maritime operations, remote mining sites.</description>
       <pubDate>Wed, 01 Apr 2026 09:00:00 +0000</pubDate>
-      <guid isPermaLink="true">https://solariswireless.com/blog/starlink-terminal-deployment</guid>
+      <guid isPermaLink="true">https://www.solariswireless.com/blog/starlink-terminal-deployment</guid>
     </item>
   </channel>
 </rss>

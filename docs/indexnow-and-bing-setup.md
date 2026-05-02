@@ -63,3 +63,16 @@ Weekly check:
 - After every deploy: `./scripts/indexnow-ping.sh`
 - Manual sitemap re-submission in Bing Webmaster Tools UI: monthly or after major content batches
 - IndexNow is rate-limit-tolerant; daily pings of the same URL set are fine
+
+## Bonus: convert Vercel non-www → www redirect from 307 to 301
+
+Currently `https://solariswireless.com` returns HTTP 307 (temporary redirect) to `https://www.solariswireless.com`. Per Reports 1 and 2, search engines pass less authority through 307 than 301. Convert to permanent in the Vercel dashboard:
+
+1. Go to https://vercel.com/dashboard
+2. Open the `solaris-website-202604` project
+3. Settings → Domains
+4. The non-www `solariswireless.com` should be set as a redirect to `www.solariswireless.com` with redirect type = "Permanent (301)"
+
+If it's currently set to "Temporary (307)" or default, change to "Permanent (301)" and save. Takes effect within ~5 minutes.
+
+After change, verify with: `curl -sI https://solariswireless.com/ | head -1` should return `HTTP/2 308` or `HTTP/2 301`.

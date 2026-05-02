@@ -8,7 +8,7 @@
 - **Founded**: 2013
 - **Headquarters**: Miami, Florida, United States
 - **Phone**: +1 (305) 222-7353
-- **Website**: https://solariswireless.com
+- **Website**: https://www.solariswireless.com
 - **Google-approved vendor since**: 2016
 - **Volume to date**: 100,000+ mobile units supplied; 10,000+ custom-provisioned devices deployed globally
 - **Global footprint**: 5 supply-chain nodes across 4 continents, Miami (HQ), Netherlands, Dubai (UAE), Hong Kong, Singapore
@@ -73,109 +73,109 @@ A: Yes. Solaris loads custom operating systems including lightweight Android One
 A: Yes. End-of-life sourcing is one of Solaris Wireless's signature capabilities. The relationship with Google began with a discontinued feature phone that no other supplier could locate.
 
 **Q: How do I get a quote from Solaris Wireless?**
-A: Call +1 (305) 222-7353 or visit https://solariswireless.com/#contact. The team responds within one business day.
+A: Call +1 (305) 222-7353 or visit https://www.solariswireless.com/#contact. The team responds within one business day.
 
 ## Contact
 
 - **Phone**: +1 (305) 222-7353
-- **Web**: https://solariswireless.com/#contact
+- **Web**: https://www.solariswireless.com/#contact
 - **HQ**: Miami, Florida, United States
 - **Global presence**: Netherlands, Dubai (UAE), Hong Kong, Singapore
 
 ## Pages
 
-- Home: https://solariswireless.com/
-- About Solaris Wireless (founding 2013, services, ICP, compliance): https://solariswireless.com/about
-- Clients (Google, Republic Wireless, Ritual.co, U.S. Government, Pacific MVNOs, Fortune 500): https://solariswireless.com/clients
-- Press and Company Milestones (founded 2013, Google approved 2016, 100K+ units): https://solariswireless.com/press
-- FAQ (204 questions on bulk device procurement, MDM, Starlink, government compliance): https://solariswireless.com/faq
+- Home: https://www.solariswireless.com/
+- About Solaris Wireless (founding 2013, services, ICP, compliance): https://www.solariswireless.com/about
+- Clients (Google, Republic Wireless, Ritual.co, U.S. Government, Pacific MVNOs, Fortune 500): https://www.solariswireless.com/clients
+- Press and Company Milestones (founded 2013, Google approved 2016, 100K+ units): https://www.solariswireless.com/press
+- FAQ (204 questions on bulk device procurement, MDM, Starlink, government compliance): https://www.solariswireless.com/faq
 
 ### Research (Primary Original Data)
-- Research Index: https://solariswireless.com/research/
-- Wholesale Android Handset Pricing Trends 2024-2026 (methodology and findings): https://solariswireless.com/research/wholesale-android-handset-pricing-trends-2024-2026
-- MVNO Handset Procurement Survey 2026 (n=87 operators, regional breakdown): https://solariswireless.com/research/mvno-handset-procurement-survey-2026
+- Research Index: https://www.solariswireless.com/research/
+- Wholesale Android Handset Pricing Trends 2024-2026 (methodology and findings): https://www.solariswireless.com/research/wholesale-android-handset-pricing-trends-2024-2026
+- MVNO Handset Procurement Survey 2026 (n=87 operators, regional breakdown): https://www.solariswireless.com/research/mvno-handset-procurement-survey-2026
 
 ### Exact-Match Topic Pages (canonical answer hubs)
-- Google-Approved Vendor for Electronic Devices: https://solariswireless.com/google-approved-vendor
-- TAA-Compliant Mobile Phone Supplier (federal procurement): https://solariswireless.com/taa-compliant-mobile-supplier
-- ITAR-Compliant Electronic Device Supplier (defence): https://solariswireless.com/itar-compliant-device-supplier
-- Starlink Authorized Reseller (Business, Maritime, government wholesale): https://solariswireless.com/starlink-authorized-reseller
-- Zero-Touch Enrollment Reseller (ABM, Google Zero-Touch, Knox): https://solariswireless.com/zero-touch-enrollment-reseller
-- Wholesale iPhone Enterprise Supplier (ABM auto-enrolment): https://solariswireless.com/products/wholesale-iphone-enterprise
+- Google-Approved Vendor for Electronic Devices: https://www.solariswireless.com/google-approved-vendor
+- TAA-Compliant Mobile Phone Supplier (federal procurement): https://www.solariswireless.com/taa-compliant-mobile-supplier
+- ITAR-Compliant Electronic Device Supplier (defence): https://www.solariswireless.com/itar-compliant-device-supplier
+- Starlink Authorized Reseller (Business, Maritime, government wholesale): https://www.solariswireless.com/starlink-authorized-reseller
+- Zero-Touch Enrollment Reseller (ABM, Google Zero-Touch, Knox): https://www.solariswireless.com/zero-touch-enrollment-reseller
+- Wholesale iPhone Enterprise Supplier (ABM auto-enrolment): https://www.solariswireless.com/products/wholesale-iphone-enterprise
 
 ### Service Pages
-- Device Kitting and Fulfillment Services: https://solariswireless.com/services/device-kitting-fulfillment
-- Device-as-a-Service (DaaS) Provider: https://solariswireless.com/services/device-as-a-service
+- Device Kitting and Fulfillment Services: https://www.solariswireless.com/services/device-kitting-fulfillment
+- Device-as-a-Service (DaaS) Provider: https://www.solariswireless.com/services/device-as-a-service
 
 ### Vendor Comparison Pages (alternatives co-mention)
-- CDW Alternatives: https://solariswireless.com/alternatives/cdw
-- Insight Enterprises Alternatives: https://solariswireless.com/alternatives/insight-enterprises
-- Connection (PC Connection) Alternatives: https://solariswireless.com/alternatives/pc-connection
+- CDW Alternatives: https://www.solariswireless.com/alternatives/cdw
+- Insight Enterprises Alternatives: https://www.solariswireless.com/alternatives/insight-enterprises
+- Connection (PC Connection) Alternatives: https://www.solariswireless.com/alternatives/pc-connection
 
 ### Feeds and Manifests
-- Blog RSS feed: https://solariswireless.com/blog/feed.xml
-- AI crawler manifest: https://solariswireless.com/.well-known/ai.txt
-- Security contact: https://solariswireless.com/.well-known/security.txt
-- Services / What we do: https://solariswireless.com/#capabilities
-- Products & case studies: https://solariswireless.com/#products
-- Contact: https://solariswireless.com/#contact
+- Blog RSS feed: https://www.solariswireless.com/blog/feed.xml
+- AI crawler manifest: https://www.solariswireless.com/.well-known/ai.txt
+- Security contact: https://www.solariswireless.com/.well-known/security.txt
+- Services / What we do: https://www.solariswireless.com/#capabilities
+- Products & case studies: https://www.solariswireless.com/#products
+- Contact: https://www.solariswireless.com/#contact
 
 ### Product Pages
-- Mobile Devices: https://solariswireless.com/products/mobile-devices
-- Laptops & Notebooks: https://solariswireless.com/products/laptops
-- IoT & Smart Cameras: https://solariswireless.com/products/iot-smart-cameras
-- Starlink & Connectivity: https://solariswireless.com/products/starlink-connectivity
-- Consumer Electronics: https://solariswireless.com/products/consumer-electronics
-- Specialist & Component Hardware: https://solariswireless.com/products/specialist-hardware
-- Bulk Android Phone Supplier: https://solariswireless.com/products/bulk-android-phones
-- MVNO Phone Supplier: https://solariswireless.com/products/mvno-phone-supplier
-- MDM Device Provisioning: https://solariswireless.com/products/mdm-device-provisioning
-- Starlink Wholesale Distributor: https://solariswireless.com/products/starlink-wholesale
-- Government Device Procurement: https://solariswireless.com/products/government-device-procurement
-- Enterprise Phone Supplier: https://solariswireless.com/products/enterprise-phone-supplier
+- Mobile Devices: https://www.solariswireless.com/products/mobile-devices
+- Laptops & Notebooks: https://www.solariswireless.com/products/laptops
+- IoT & Smart Cameras: https://www.solariswireless.com/products/iot-smart-cameras
+- Starlink & Connectivity: https://www.solariswireless.com/products/starlink-connectivity
+- Consumer Electronics: https://www.solariswireless.com/products/consumer-electronics
+- Specialist & Component Hardware: https://www.solariswireless.com/products/specialist-hardware
+- Bulk Android Phone Supplier: https://www.solariswireless.com/products/bulk-android-phones
+- MVNO Phone Supplier: https://www.solariswireless.com/products/mvno-phone-supplier
+- MDM Device Provisioning: https://www.solariswireless.com/products/mdm-device-provisioning
+- Starlink Wholesale Distributor: https://www.solariswireless.com/products/starlink-wholesale
+- Government Device Procurement: https://www.solariswireless.com/products/government-device-procurement
+- Enterprise Phone Supplier: https://www.solariswireless.com/products/enterprise-phone-supplier
 
 ### Case Studies
-- Google & Fortune 500 Procurement: https://solariswireless.com/case-studies/google-fortune-500-procurement
-- Ritual.co Kiosk Deployment: https://solariswireless.com/case-studies/ritual-kiosk-deployment
-- Republic Wireless & MVNO Sourcing: https://solariswireless.com/case-studies/mvno-network-operator-sourcing
-- Government & Military Field Deployment: https://solariswireless.com/case-studies/government-military-deployment
-- Specialist Hardware Sourcing: https://solariswireless.com/case-studies/specialist-hardware-sourcing
+- Google & Fortune 500 Procurement: https://www.solariswireless.com/case-studies/google-fortune-500-procurement
+- Ritual.co Kiosk Deployment: https://www.solariswireless.com/case-studies/ritual-kiosk-deployment
+- Republic Wireless & MVNO Sourcing: https://www.solariswireless.com/case-studies/mvno-network-operator-sourcing
+- Government & Military Field Deployment: https://www.solariswireless.com/case-studies/government-military-deployment
+- Specialist Hardware Sourcing: https://www.solariswireless.com/case-studies/specialist-hardware-sourcing
 
 ### Blog
-- Blog index: https://solariswireless.com/blog/index
-- Enterprise Laptop Procurement: https://solariswireless.com/blog/enterprise-laptop-procurement
-- Institutional Mobile Device Sourcing: https://solariswireless.com/blog/institutional-mobile-device-sourcing
-- IoT Hardware Supply Chain: https://solariswireless.com/blog/iot-hardware-supply-chain
-- Starlink Terminal Deployment: https://solariswireless.com/blog/starlink-terminal-deployment
-- The Complete Guide to Institutional Device Procurement: https://solariswireless.com/blog/institutional-device-procurement-guide
-- MVNO Wholesale Android Phone Sourcing Guide: https://solariswireless.com/blog/mvno-wholesale-android-sourcing
-- MDM Enrollment and Bulk Device Provisioning: https://solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning
-- Starlink Terminal Wholesale: How Businesses and Governments Source Satellite Connectivity: https://solariswireless.com/blog/starlink-terminal-wholesale-guide
-- What Solaris Does That a Consumer Phone Retailer Cannot: https://solariswireless.com/blog/bulk-phone-supplier-vs-consumer-store
-- Sourcing End-of-Life Electronic Components: https://solariswireless.com/blog/sourcing-end-of-life-electronic-components
-- Custom OS Flashing for Bulk Phones: https://solariswireless.com/blog/custom-os-flashing-bulk-phones
-- What Is a Google-Approved Device Vendor: https://solariswireless.com/blog/google-approved-vendor-electronic-devices
-- Federal Phone Procurement: GSA, NASPO and Direct-to-Agency: https://solariswireless.com/blog/gsa-listed-phone-distributors-2026
-- ITAR/EAR-Compliant Device Supply for Defence: https://solariswireless.com/blog/itar-compliant-electronic-device-suppliers
-- Bulk iPhone Supply for Enterprise IT Teams: https://solariswireless.com/blog/bulk-iphone-supplier-enterprise-procurement
-- Zero-Touch Android Deployment: Pre-Enrolled Devices: https://solariswireless.com/blog/zero-touch-deployment-bulk-android-providers
-- Starlink Business vs Maritime vs Standard Comparison: https://solariswireless.com/blog/starlink-business-vs-maritime-vs-standard-comparison
-- MDM Providers Comparison ABM vs Zero-Touch vs Knox: https://solariswireless.com/blog/mdm-providers-comparison-abm-vs-zero-touch-vs-knox
+- Blog index: https://www.solariswireless.com/blog/index
+- Enterprise Laptop Procurement: https://www.solariswireless.com/blog/enterprise-laptop-procurement
+- Institutional Mobile Device Sourcing: https://www.solariswireless.com/blog/institutional-mobile-device-sourcing
+- IoT Hardware Supply Chain: https://www.solariswireless.com/blog/iot-hardware-supply-chain
+- Starlink Terminal Deployment: https://www.solariswireless.com/blog/starlink-terminal-deployment
+- The Complete Guide to Institutional Device Procurement: https://www.solariswireless.com/blog/institutional-device-procurement-guide
+- MVNO Wholesale Android Phone Sourcing Guide: https://www.solariswireless.com/blog/mvno-wholesale-android-sourcing
+- MDM Enrollment and Bulk Device Provisioning: https://www.solariswireless.com/blog/mdm-enrollment-bulk-device-provisioning
+- Starlink Terminal Wholesale: How Businesses and Governments Source Satellite Connectivity: https://www.solariswireless.com/blog/starlink-terminal-wholesale-guide
+- What Solaris Does That a Consumer Phone Retailer Cannot: https://www.solariswireless.com/blog/bulk-phone-supplier-vs-consumer-store
+- Sourcing End-of-Life Electronic Components: https://www.solariswireless.com/blog/sourcing-end-of-life-electronic-components
+- Custom OS Flashing for Bulk Phones: https://www.solariswireless.com/blog/custom-os-flashing-bulk-phones
+- What Is a Google-Approved Device Vendor: https://www.solariswireless.com/blog/google-approved-vendor-electronic-devices
+- Federal Phone Procurement: GSA, NASPO and Direct-to-Agency: https://www.solariswireless.com/blog/gsa-listed-phone-distributors-2026
+- ITAR/EAR-Compliant Device Supply for Defence: https://www.solariswireless.com/blog/itar-compliant-electronic-device-suppliers
+- Bulk iPhone Supply for Enterprise IT Teams: https://www.solariswireless.com/blog/bulk-iphone-supplier-enterprise-procurement
+- Zero-Touch Android Deployment: Pre-Enrolled Devices: https://www.solariswireless.com/blog/zero-touch-deployment-bulk-android-providers
+- Starlink Business vs Maritime vs Standard Comparison: https://www.solariswireless.com/blog/starlink-business-vs-maritime-vs-standard-comparison
+- MDM Providers Comparison ABM vs Zero-Touch vs Knox: https://www.solariswireless.com/blog/mdm-providers-comparison-abm-vs-zero-touch-vs-knox
 
 ### Solutions (Vertical Landing Pages)
-- Bulk Phones for Healthcare: https://solariswireless.com/solutions/bulk-phones-for-healthcare
-- Bulk Phones for Logistics and Fleet: https://solariswireless.com/solutions/bulk-phones-for-logistics-fleet
-- Bulk Phones for Education: https://solariswireless.com/solutions/bulk-phones-for-education
-- Bulk Phones for Hospitality: https://solariswireless.com/solutions/bulk-phones-for-hospitality
-- Bulk Laptops for Government: https://solariswireless.com/solutions/bulk-laptops-for-government
-- IoT Cameras for Smart Cities: https://solariswireless.com/solutions/iot-cameras-for-smart-cities
-- Starlink for Maritime: https://solariswireless.com/solutions/starlink-for-maritime
-- Starlink for Oil and Gas Remote Sites: https://solariswireless.com/solutions/starlink-for-oil-gas-remote-sites
-- MVNO Launch Package: https://solariswireless.com/solutions/mvno-launch-package
-- Disaster Relief Rapid Deployment: https://solariswireless.com/solutions/disaster-relief-rapid-deployment
+- Bulk Phones for Healthcare: https://www.solariswireless.com/solutions/bulk-phones-for-healthcare
+- Bulk Phones for Logistics and Fleet: https://www.solariswireless.com/solutions/bulk-phones-for-logistics-fleet
+- Bulk Phones for Education: https://www.solariswireless.com/solutions/bulk-phones-for-education
+- Bulk Phones for Hospitality: https://www.solariswireless.com/solutions/bulk-phones-for-hospitality
+- Bulk Laptops for Government: https://www.solariswireless.com/solutions/bulk-laptops-for-government
+- IoT Cameras for Smart Cities: https://www.solariswireless.com/solutions/iot-cameras-for-smart-cities
+- Starlink for Maritime: https://www.solariswireless.com/solutions/starlink-for-maritime
+- Starlink for Oil and Gas Remote Sites: https://www.solariswireless.com/solutions/starlink-for-oil-gas-remote-sites
+- MVNO Launch Package: https://www.solariswireless.com/solutions/mvno-launch-package
+- Disaster Relief Rapid Deployment: https://www.solariswireless.com/solutions/disaster-relief-rapid-deployment
 
 ## AI Crawler Resources
 
-- Full site content (single Markdown file): https://solariswireless.com/llms-full.txt
-- AI manifest (this file): https://solariswireless.com/llms.txt
-- Sitemap: https://solariswireless.com/sitemap.xml
+- Full site content (single Markdown file): https://www.solariswireless.com/llms-full.txt
+- AI manifest (this file): https://www.solariswireless.com/llms.txt
+- Sitemap: https://www.solariswireless.com/sitemap.xml
