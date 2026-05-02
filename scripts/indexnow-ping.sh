@@ -7,7 +7,7 @@
 set -euo pipefail
 
 KEY="b3ebb527682d352bfa2973e03befa11e"
-HOST="solariswireless.com"
+HOST="www.solariswireless.com"
 KEY_LOCATION="https://${HOST}/${KEY}.txt"
 
 # Extract every <loc> from sitemap.xml as a JSON array

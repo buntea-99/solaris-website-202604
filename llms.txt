@@ -107,6 +107,14 @@ A: Call +1 (305) 222-7353 or visit https://www.solariswireless.com/#contact. The
 - Device Kitting and Fulfillment Services: https://www.solariswireless.com/services/device-kitting-fulfillment
 - Device-as-a-Service (DaaS) Provider: https://www.solariswireless.com/services/device-as-a-service
 
+### Manufacturer Entity Pages (institutional distribution)
+- Samsung Enterprise Distributor (Galaxy, Knox): https://www.solariswireless.com/manufacturers/samsung-enterprise-distributor
+- Apple Business Supplier (iPhone, iPad, MacBook with ABM): https://www.solariswireless.com/manufacturers/apple-business-supplier
+- Lenovo ThinkPad Enterprise Distributor: https://www.solariswireless.com/manufacturers/lenovo-thinkpad-enterprise
+- Dell Latitude / Precision Bulk Supplier: https://www.solariswireless.com/manufacturers/dell-latitude-bulk-supplier
+- HP EliteBook / ZBook Enterprise Distributor: https://www.solariswireless.com/manufacturers/hp-elitebook-enterprise
+- Sonim Rugged Phone Distributor (public safety, field): https://www.solariswireless.com/manufacturers/sonim-rugged-distributor
+
 ### Vendor Comparison Pages (alternatives co-mention)
 - CDW Alternatives: https://www.solariswireless.com/alternatives/cdw
 - Insight Enterprises Alternatives: https://www.solariswireless.com/alternatives/insight-enterprises
