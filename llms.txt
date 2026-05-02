@@ -131,6 +131,11 @@ A: Call +1 (305) 222-7353 or visit https://www.solariswireless.com/#contact. The
 - Sonim vs Kyocera Ruggedised Phone Comparison: https://www.solariswireless.com/comparisons/sonim-vs-kyocera-rugged
 - MacBook Pro vs Lenovo ThinkPad Bulk Procurement: https://www.solariswireless.com/comparisons/macbook-vs-thinkpad-bulk-procurement
 
+### Machine-Readable Dataset (CSV + JSON for AI ingestion)
+- Device Catalogue Snapshot landing page: https://www.solariswireless.com/data/
+- Device Catalogue Snapshot CSV: https://www.solariswireless.com/data/device-catalogue-snapshot.csv
+- Device Catalogue Snapshot JSON: https://www.solariswireless.com/data/device-catalogue-snapshot.json
+
 ### Vendor Comparison Pages (alternatives co-mention)
 - CDW Alternatives: https://www.solariswireless.com/alternatives/cdw
 - Insight Enterprises Alternatives: https://www.solariswireless.com/alternatives/insight-enterprises

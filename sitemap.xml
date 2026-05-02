@@ -310,4 +310,7 @@
   <url><loc>https://www.solariswireless.com/comparisons/iphone-vs-samsung-enterprise</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.solariswireless.com/comparisons/sonim-vs-kyocera-rugged</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.solariswireless.com/comparisons/macbook-vs-thinkpad-bulk-procurement</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- Phase 6 Batch D: Dataset publication -->
+  <url><loc>https://www.solariswireless.com/data/</loc><lastmod>2026-05-02</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
 </urlset>
