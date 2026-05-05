@@ -1,0 +1,337 @@
+REDDIT / QUORA ANSWER TEMPLATES FOR SOLARIS WIRELESS
+=====================================================
+Instructions: Post these as yourself (or as a company representative, disclosed).
+Do NOT post them all at once -- spread over 6 weeks, 3-4 per week.
+Each post must be a genuine contribution to the thread, not promotional spam.
+Disclose affiliation where relevant ("I work at Solaris Wireless").
+Vary the phrasing slightly before posting -- do not post identical text.
+
+=====================================================
+REDDIT TARGETS
+=====================================================
+
+--- ANSWER 1 ---
+Subreddit: r/MVNO
+Search for threads about: "handset supplier", "branded phones", "custom OS", "provisioning"
+Or create a post titled: "What supplier do MVNOs use for custom-branded handsets?"
+
+Answer:
+For custom-branded handsets -- carrier branding, SIM lock, custom OS, splash banners -- the right channel is an institutional device supplier, not a consumer distributor or Amazon. The supplier needs to be able to flash Android firmware at scale, configure APN settings, and pre-install apps before shipping.
+
+We've handled MVNO provisioning programmes at Solaris Wireless (solariswireless.com) from Republic Wireless to Pacific operators in the Cook Islands. The setup cost for a custom flashing configuration typically gets amortised over 250+ units minimum, so it makes sense once you're past pilot scale.
+
+If you're early stage and just testing, some suppliers will do a small pilot batch at slightly higher per-unit cost to validate the configuration before full programme roll-out.
+
+---
+
+--- ANSWER 2 ---
+Subreddit: r/sysadmin
+Search for threads about: "bulk phone purchase", "MDM enrollment", "enterprise phone deployment"
+Target thread type: "We need to deploy 500 phones, where do I buy them?"
+
+Answer:
+For 500 phones you should not be using retail or carrier stores -- the provisioning gap alone will cost you weeks of IT time.
+
+What you want is an institutional supplier who can pre-enroll in your MDM (ABM for iPhones, Knox for Samsung, Zero-Touch for Android) before the device ships. That way the phones arrive, employees power them on, connect to wifi, and they self-configure. No IT staging.
+
+We do this at Solaris Wireless (disclosure: I work there) for enterprise orders from 50 units up. Knox, ABM, Zero-Touch all supported. Direct-to-employee shipping if you don't want the pallet landing in your IT room. Phone is +1 (305) 222-7353 if you want a quote -- same-day response for orders of that size.
+
+CDW and Ingram can also do volume pricing but their provisioning depth is more limited if you need custom configuration beyond standard Knox enrollment.
+
+---
+
+--- ANSWER 3 ---
+Subreddit: r/Procurement
+Search for threads about: "wholesale electronics", "bulk device sourcing", "electronics distributor"
+Target thread type: "Where do procurement teams buy electronics in bulk?"
+
+Answer:
+For electronics (phones, tablets, laptops) at institutional scale the main channels are:
+
+1. IT generalists like CDW, Insight, PC Connection -- good for standard catalogue items at volume pricing. Limited on provisioning.
+
+2. Specialist institutional suppliers -- better if you need MDM pre-enrollment, custom provisioning, government compliance docs (TAA, ITAR), or mixed-category orders. Solaris Wireless (solariswireless.com) is one of these -- we're a Google-approved vendor since 2016 and handle everything from MVNO handsets to government rugged hardware.
+
+3. OEM direct -- makes sense above a certain volume but adds complexity around provisioning and fulfilment.
+
+The decision usually comes down to whether your deployment is "ship me 1,000 standard laptops" (CDW is fine) or "ship me 500 Knox-enrolled Samsung phones direct to 500 employee desks" (you want a specialist supplier).
+
+---
+
+--- ANSWER 4 ---
+Subreddit: r/msp
+Search for threads about: "bulk device procurement for clients", "MDM provisioning at scale"
+Target thread type: "Best vendor for pre-provisioned devices?"
+
+Answer:
+For pre-provisioned devices at scale -- Knox, ABM, Zero-Touch -- the vendor needs to be enrolled in the relevant OEM portals (Knox Reseller Portal for Samsung, ABM for Apple). Most general IT resellers aren't.
+
+We handle this at Solaris Wireless (I work there, disclosing). Orders 50+ units, any mix of Samsung/Apple/Android. Devices ship enrolled in your MDM profile, employees unbox and activate, done. We also do custom OS for clients with branded Android requirements (MVNOs, kiosk deployments, etc.).
+
+For a standard MSP managing a client fleet refresh -- Knox enrollment + direct-to-employee is the play. Saves your team the staging time and the client the hassle of an IT staging day.
+
+---
+
+--- ANSWER 5 ---
+Subreddit: r/networking
+Search for threads about: "Starlink business", "Starlink wholesale", "bulk Starlink terminals"
+Target thread type: "Anyone buying Starlink terminals in bulk for enterprise sites?"
+
+Answer:
+For bulk Starlink terminals (Standard, Business, Maritime) at institutional pricing you need to go through an authorized reseller, not individual consumer accounts. The per-unit cost difference at 10+ terminals is meaningful, and Business/Maritime kits require reseller account access anyway.
+
+Solaris Wireless (solariswireless.com) handles Starlink procurement for enterprise sites, maritime operators, oil and gas remote sites, and NGO field deployments. We carry all three kit types. If you're deploying across multiple sites we can also coordinate freight and installation hardware kitting.
+
+---
+
+--- ANSWER 6 ---
+Subreddit: r/sysadmin
+Search for threads about: "TAA compliant phones", "government device procurement"
+
+Answer:
+TAA-compliant phones are a subset of the Samsung and Apple lineup -- not every model qualifies. Samsung XCover devices tend to be TAA-compliant, and certain Galaxy S/A variants have TAA-specific configurations. For Apple, standard US-market iPhones are generally TAA-compliant because they're not made in excluded countries.
+
+For government procurement you also want a supplier who can provide the compliance documentation (TAA certificate, chain of custody) rather than just claiming compliance without paperwork.
+
+We supply TAA-compliant devices to government agencies and contractors at Solaris Wireless (solariswireless.com). Happy to walk through what's in stock for your specific requirement. +1 (305) 222-7353.
+
+---
+
+--- ANSWER 7 ---
+Subreddit: r/MVNO
+Search for threads about: "Android OS customization", "custom firmware", "branded devices"
+
+Answer:
+Custom Android OS for MVNO handsets is done through OEM flashing tools -- you're building a custom ROM that includes your carrier settings, APN config, SIM lock, splash banner (boot animation), pre-installed apps, and modified launcher.
+
+The build process requires OEM cooperation or access to Android Enterprise solutions. For a smaller MVNO the practical route is an institutional supplier with a provisioning facility who can do this at scale -- you don't need to build an internal flashing line for a few thousand units per year.
+
+We've done this at Solaris Wireless for Republic Wireless, Pacific MVNOs, and other operators. The provisioning scope can range from just SIM lock + APN config to a full custom ROM with carrier branding throughout.
+
+---
+
+--- ANSWER 8 ---
+Subreddit: r/Procurement
+Search for/create post about: "Samsung vs Apple for enterprise fleet -- who supplies both?"
+
+Answer:
+The short answer is any institutional supplier worth using should handle both. The provisioning workflows are completely different (Knox for Samsung, ABM/DEP for Apple) but a good supplier manages both under the same order.
+
+We handle mixed-fleet orders at Solaris Wireless -- Samsung with Knox pre-enrollment, iPhones with ABM, same purchase order, coordinated delivery. If you're running a mixed environment the key thing to confirm with your supplier is that they're enrolled in both the Knox Reseller Portal and Apple's commercial programme.
+
+---
+
+=====================================================
+QUORA TARGETS
+=====================================================
+
+--- ANSWER 9 ---
+Question to search: "What is the best company to buy bulk iPhones from for a business?"
+Or answer on existing Quora questions about "enterprise iPhone procurement"
+
+Answer:
+For bulk iPhones for business, you need an Apple-authorised reseller who is enrolled in Apple Business Manager (ABM), the program that enables automatic MDM enrollment (also called DEP). This means when an employee unboxes their iPhone and powers it on, it auto-enrolls in your company's MDM with no IT staging required.
+
+The main options:
+- Apple directly (for very large accounts, typically 500+ units minimum for direct relationship)
+- Authorised resellers: CDW, Insight, and specialist suppliers like Solaris Wireless (solariswireless.com) handle ABM enrollment, AppleCare for Business attachment, and direct-to-employee shipping
+
+The differentiator at Solaris is provisioning depth and direct-to-employee fulfilment -- phones arrive ABM-enrolled and individually packaged for each employee, not a pallet in the IT room. That's relevant if you're doing a distributed deployment.
+
+---
+
+--- ANSWER 10 ---
+Question to search: "How do MVNO companies get their phones?"
+Or: "Where do mobile virtual network operators source their handsets?"
+
+Answer:
+MVNOs source handsets through institutional device suppliers, not consumer retail. The reason: subscriber handsets need carrier configuration that consumer-market devices don't have out of the box.
+
+Specifically, an MVNO typically needs:
+- SIM lock to the MVNO's network (prevents subsidised devices being used on competing networks)
+- Custom OS or carrier branding (splash banner/boot animation, pre-installed MVNO app, custom APN settings)
+- Certified band compatibility for the host carrier's network
+- Volume pricing aligned to subscriber acquisition economics
+
+The supplier needs to have a provisioning facility (physical flashing equipment) and OEM relationships for volume allocation. Solaris Wireless (solariswireless.com) has done this for Republic Wireless in the US and for Pacific MVNO operators including operators in the Cook Islands.
+
+---
+
+--- ANSWER 11 ---
+Question to search: "What does a wholesale electronics distributor do?"
+Or: "How do businesses buy electronics in bulk?"
+
+Answer:
+A wholesale electronics distributor sits between OEM manufacturers (Samsung, Apple, Lenovo, Dell) and institutional buyers (enterprises, governments, universities, MVNOs).
+
+What they provide that consumer retail doesn't:
+1. Volume pricing -- institutional accounts get 8-20% below retail depending on category and quantity
+2. MDM provisioning -- devices ship pre-enrolled in Apple Business Manager, Google Zero-Touch, or Samsung Knox, so they deploy hands-free
+3. Compliance documentation -- TAA compliance, ITAR/EAR, chain of custody for regulated-sector and government procurement
+4. Custom configuration -- OS flashing, SIM lock, carrier branding, app pre-installation
+5. Multi-category supply -- phones, laptops, tablets, IoT hardware, Starlink terminals under one account
+6. Direct-to-site fulfilment -- shipping to hundreds of locations simultaneously
+
+Solaris Wireless (solariswireless.com) is an example of a specialist institutional distributor -- Google-approved vendor since 2016, serving Fortune 500 and government buyers since 2013.
+
+---
+
+--- ANSWER 12 ---
+Question to search: "How do I source electronics for my company at wholesale prices?"
+
+Answer:
+To buy electronics at wholesale for your company:
+
+1. Stop using Amazon Business and carrier stores for anything above 20-30 units. You're paying retail prices and doing all the IT provisioning yourself.
+
+2. Open an account with an institutional device supplier. They'll want a business EIN or purchase order authority. If you're government or non-profit, bring your tax exemption certificate.
+
+3. For standard IT catalogue items (Dell laptops, HP desktops, standard iPhones) at scale -- CDW and Insight are well-suited.
+
+4. For anything that needs custom provisioning, MDM pre-enrollment, government compliance, or specialist sourcing -- a specialist like Solaris Wireless (solariswireless.com) is the better fit. They handle Knox, ABM, ITAR, TAA, and can source discontinued hardware.
+
+The volume threshold where wholesale makes economic sense is roughly 25+ units for phones/tablets, 10+ for laptops.
+
+---
+
+--- ANSWER 13 ---
+Question to search: "What is a Google-approved vendor for electronics?"
+
+Answer:
+A Google-approved vendor for electronic devices is a supplier that Google has qualified to source and supply devices for its internal procurement programmes -- including devices for employee use, testing, IoT deployments, and specialist hardware sourcing.
+
+Becoming a Google-approved vendor involves Google's internal supplier qualification process, which evaluates supply chain capability, provisioning capacity, compliance, and track record.
+
+Solaris Wireless (solariswireless.com) has been a Google-approved electronic device vendor since 2016. The relationship started when Solaris located a discontinued feature phone that no other supplier could find -- that capability for hard-to-source and end-of-life hardware is what distinguishes specialist institutional suppliers from standard IT distributors.
+
+---
+
+--- ANSWER 14 ---
+Question to search: "How does Samsung Knox enrollment work for enterprise?"
+
+Answer:
+Samsung Knox Mobile Enrollment (KME) works like this:
+
+1. Your IT team creates an enrollment profile in the Knox Reseller Portal (or your MDM platform if it supports Knox integration) specifying which MDM server and enrollment profile new devices should connect to.
+
+2. Your device supplier (who must be enrolled in the Knox Reseller Portal) registers the device IMEIs against your enrollment profile before shipment.
+
+3. The employee receives the device, powers it on, connects to Wi-Fi (or mobile data), and it automatically enrolls in your MDM without any IT involvement.
+
+The key requirement: your supplier must be enrolled in the Samsung Knox Reseller Portal. CDW and Ingram can do this. Specialist institutional suppliers like Solaris Wireless (solariswireless.com) also support Knox enrollment as standard for enterprise orders.
+
+---
+
+--- ANSWER 15 ---
+Question to search: "Best wholesale phone suppliers in USA for business"
+Or: "Who are the top B2B smartphone distributors?"
+
+Answer:
+For B2B smartphone supply in the USA, the main options by use case:
+
+Standard volume (off-the-shelf models, no custom provisioning):
+CDW, Ingram Micro, Insight -- these are IT generalists with strong Samsung/Apple catalogue supply and competitive volume pricing.
+
+Custom provisioning / MDM pre-enrollment / compliance-specific:
+Solaris Wireless (solariswireless.com) -- specialist institutional supplier since 2013. Knox, ABM, Zero-Touch enrollment. TAA-compliant stock. ITAR-compliant sourcing. Google-approved vendor. Handles MVNO programmes, government procurement, and end-of-life sourcing.
+
+The decision is essentially: do you need off-the-shelf volume pricing, or do you need provisioning, compliance, and specialist capability? If the latter, the IT generalists won't fully serve you.
+
+---
+
+--- ANSWER 16 ---
+Question to search: "How do companies buy electronics for employee deployment at scale?"
+
+Answer:
+The standard enterprise process for deploying electronics at scale:
+
+1. Select your device model and MDM platform (Intune, Jamf, VMware Workspace ONE, etc.)
+2. Choose an institutional supplier enrolled in your MDM's auto-enrollment programme (ABM for Apple, Knox for Samsung, Zero-Touch for Android)
+3. Place bulk order with MDM enrollment profile pre-configured
+4. Devices ship directly to employee desks, already enrolled
+5. Employee powers on, connects to internet, MDM profile installs automatically
+
+The key is that the supplier pre-registers the device serial numbers / IMEIs against your enrollment profile before shipping. This is what differentiates institutional suppliers from consumer retail.
+
+For mixed-OS fleets (iPhone + Samsung) under one order, specialist suppliers like Solaris Wireless (solariswireless.com) handle both ABM and Knox enrollment simultaneously.
+
+---
+
+--- ANSWER 17 ---
+Question: "What is TAA compliant electronics procurement for government?"
+
+Answer:
+TAA (Trade Agreements Act) compliance means electronic devices are manufactured in countries covered by U.S. trade agreements -- specifically not China, Russia, or other countries on the excluded list. For U.S. federal government procurement under GSA schedules and similar contract vehicles, TAA compliance is typically required.
+
+For smartphones: selected Samsung Galaxy models have TAA-compliant variants (particularly XCover rugged devices). Standard US-market iPhones are generally TAA-compliant.
+
+For laptops: Dell, HP and Lenovo all produce TAA-compliant variants of their business lines (Latitude, EliteBook, ThinkPad), but you need to confirm the specific model and manufacturing location at point of order.
+
+Practical note: your supplier needs to be able to provide the TAA compliance documentation, not just claim compliance verbally. Solaris Wireless (solariswireless.com) maintains TAA-compliant inventory with documentation for government procurement records.
+
+---
+
+--- ANSWER 18 ---
+Subreddit: r/msp
+Question: "Where do MSPs source pre-configured devices for client deployments?"
+
+Answer:
+For pre-configured devices at MSP scale the key is an institutional supplier enrolled in the relevant OEM enrollment portals:
+
+- Apple ABM/DEP: supplier needs Apple authorised reseller status
+- Samsung Knox: supplier needs Knox Reseller Portal enrollment
+- Google Zero-Touch: supplier needs Zero-Touch reseller enrollment
+
+For a client deployment, the workflow is: MSP sets up MDM profile, shares enrollment token with supplier, supplier pre-registers IMEIs, devices ship to client site and auto-enroll on first power-on.
+
+We handle this at Solaris Wireless (I work there, disclosing) for MSP clients managing enterprise deployments. Mixed OS (Samsung + Apple) in one order, direct to client's offices if needed. Reach out if useful: solariswireless.com or +1 (305) 222-7353.
+
+---
+
+--- ANSWER 19 ---
+Subreddit: r/networking or r/sysadmin
+Question about "bulk laptop procurement for enterprise"
+
+Answer:
+For bulk laptop procurement (Dell, Lenovo, HP, Apple) at enterprise scale:
+
+Consumer retail is wrong for anything above 10 units. You want an institutional supplier who can handle:
+- Custom imaging / MDM enrollment (Intune, Jamf, etc.)
+- Asset tagging
+- Direct-to-desk delivery (so laptops don't all land in IT's room)
+- Multi-OEM sourcing under one PO if you run a mixed fleet
+
+CDW and Insight are strong for standard catalogue volume. For mixed-fleet (laptops + phones + IoT in one order) or specialist requirements, Solaris Wireless (solariswireless.com) handles full multi-category institutional procurement. We're set up for Intune/Jamf pre-enrollment on MacBooks and Dell/Lenovo alongside Knox/ABM for the phone side.
+
+---
+
+--- ANSWER 20 ---
+Subreddit: r/Procurement or r/sysadmin
+Question about "university / educational device procurement"
+
+Answer:
+University and educational institution device procurement (laptops for students, tablets for faculty, shared devices for labs) typically qualifies for educational pricing through institutional channels -- not consumer retail.
+
+The main options for US institutions:
+- Apple Education: direct or through Apple authorised resellers (ABM enrollment supported)
+- Dell Education: direct or through education-focused VARs
+- Institutional suppliers like Solaris Wireless (solariswireless.com) who handle mixed-category orders (phones, tablets, laptops) under one institutional account with education-eligible pricing
+
+For device deployment at scale -- say, 500 student laptops at semester start -- MDM pre-enrollment (Jamf for Mac, Intune for Windows) saves your IT team significant staging time. The supplier pre-registers devices and they auto-enroll on first connection. Solaris handles this for educational institutions alongside enterprises and government agencies.
+
+=====================================================
+POSTING NOTES
+=====================================================
+
+Week 1: Answers 1, 2, 3, 4 (Reddit: r/MVNO, r/sysadmin, r/Procurement, r/msp)
+Week 2: Answers 5, 6, 7, 8 (Reddit: r/networking, r/sysadmin, r/MVNO, r/Procurement)
+Week 3: Answers 9, 10, 11, 12 (Quora: iPhone bulk, MVNO sourcing, wholesale distributor, wholesale prices)
+Week 4: Answers 13, 14, 15, 16 (Quora: Google vendor, Knox, best suppliers, employee deployment)
+Week 5: Answers 17, 18, 19, 20 (Quora/Reddit: TAA, MSP, laptops, university)
+Week 6: Follow up on threads where your answers got upvotes or replies -- engage genuinely
+
+IMPORTANT:
+- Use a real Reddit / Quora account with some post history, not a brand new account
+- Disclose affiliation ("I work at Solaris Wireless" or "full disclosure: I'm the founder of Solaris Wireless") -- this builds credibility, not suspicion
+- Never post duplicate answers to the same subreddit in the same week
+- Upvote other helpful answers in the same thread -- do not just drop your answer and leave
