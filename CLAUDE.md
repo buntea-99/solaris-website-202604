@@ -109,6 +109,26 @@ VERCEL_TOKEN=$(grep VERCEL_TOKEN .env | cut -d= -f2) vercel --token $VERCEL_TOKE
 - The 9-card flip grid on `index.html` uses a mix of inline brand SVGs (Republic Wireless wordmark, Ritual sky-blue square, Google G in colour) and PNG icons in `images/icon-*.png` (body cam, capitol, laptop). Card icons were upscaled 4× via `ffmpeg ... -vf scale=iw*4:ih*4:flags=lanczos` to fix pixelation.
 - The `youtubeseovideo1.txt` file is a transcript of an SEO masterclass — kept in the repo as reference for the AI-SEO strategy used here.
 
+## AI SEO Measurement Loop (Phase 3 of 2026-05-07 plan)
+
+Three Node scripts in `scripts/` track AI ranking performance:
+
+- `npm run semrush` -> writes `data/semrush/YYYY-MM-DD.json`. Pulls `domain_organic` (top 500), gap vs CDW/Apple/Brightstar/Mobile Sentrix/Insight, backlinks overview + top 200 referring domains, and AI Overview presence for the 50 keywords in `data/priority-keywords.json`. Idempotent (skip if today's file exists; `--force` to override). Reads `SEMRUSH_API_KEY` from `../../.env`.
+- `npm run ai-monitor` -> writes `data/ai-monitoring/YYYY-MM-DD.json`. Runs the ~75 prompts in `data/ai-monitoring-prompts.json` against OpenAI (`gpt-4o-search-preview`) and Perplexity (`sonar-pro`). Records `cited_in_text`, `cited_as_source`, `competitors_cited`, `top_3_sources`, `answer_length`. `--limit N`, `--tier branded|differentiator|unbranded|competitive`, `--force`. Cost ~$1-3 per full run. Reads `OPENAI_API_KEY` and `PERPLEXITY_API_KEY` from `../../.env`.
+- `npm run report` -> reads the two newest snapshots in each folder and prints week-over-week deltas: AIO presence, organic keyword count, Authority Score, new vs lost referring domains, OpenAI/Perplexity citation rate per engine, and the top 5 unbranded/competitive prompts where competitors are cited but Solaris is not.
+
+Suggested local cron (Mac, weekly Monday 09:00 UTC):
+
+```
+0 9 * * 1 cd /Users/vasugupta/Documents/Client\ Work/Bivek/active/Solaris\ Website\ Project && /usr/local/bin/npm run semrush >> data/cron.log 2>&1
+5 9 * * 1 cd /Users/vasugupta/Documents/Client\ Work/Bivek/active/Solaris\ Website\ Project && /usr/local/bin/npm run ai-monitor >> data/cron.log 2>&1
+20 9 * * 1 cd /Users/vasugupta/Documents/Client\ Work/Bivek/active/Solaris\ Website\ Project && /usr/local/bin/npm run report >> data/weekly-report.log 2>&1
+```
+
+Required env vars in `/Users/vasugupta/Documents/Client Work/Bivek/.env`: `SEMRUSH_API_KEY`, `OPENAI_API_KEY`, `PERPLEXITY_API_KEY`.
+
+`data/offsite-progress.md` is the manual-action tracker; update each session as the user reports completions. The off-site execution order (citation share gain / friction) is below.
+
 ## Off-Site SEO Action Checklist (User Must Do Manually)
 
 The on-page work is comprehensive (33+ pages, schema, llms.txt, og:image, breadcrumb/HowTo schema, 10 vertical solution pages, 12 BOFU/comparison blog posts). The remaining ranking gains require external account creation that cannot be automated:

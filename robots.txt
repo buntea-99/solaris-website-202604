@@ -85,6 +85,18 @@ Allow: /
 User-agent: MarmosetBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
 # Sitemaps and AI manifest
 Sitemap: https://www.solariswireless.com/sitemap.xml
 Host: https://www.solariswireless.com

@@ -2781,3 +2781,77 @@ a.product-card:hover {
   .f-hint-desktop { display: none; }
   .f-hint-mobile { display: inline; }
 }
+
+/* AI extraction blocks: TL;DR + buyer Q&A. Pure CSS, no JS dependency. */
+.ai-tldr {
+  background: #f8fafc;
+  border-left: 3px solid #C49A1A;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 880px;
+  border-radius: 0 6px 6px 0;
+}
+.ai-tldr-label {
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #C49A1A;
+  margin-bottom: 0.5rem;
+}
+.ai-tldr-lead {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: #0f172a;
+  margin: 0;
+}
+.ai-qa {
+  max-width: 880px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+.ai-qa-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: #0f172a;
+  margin-bottom: 1.25rem;
+}
+.ai-qa details {
+  border-top: 1px solid #e2e8f0;
+  padding: 1rem 0;
+}
+.ai-qa details:last-child {
+  border-bottom: 1px solid #e2e8f0;
+}
+.ai-qa summary {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 1.5rem;
+}
+.ai-qa summary::-webkit-details-marker { display: none; }
+.ai-qa summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #C49A1A;
+  font-weight: 400;
+}
+.ai-qa details[open] summary::after { content: '\2212'; }
+.ai-qa details > p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  color: #334155;
+  margin: 0.75rem 0 0 0;
+}

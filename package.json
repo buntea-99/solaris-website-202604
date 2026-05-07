@@ -5,7 +5,17 @@
   "engines": {
     "node": "20.x"
   },
+  "scripts": {
+    "semrush": "node scripts/semrush-pull.js",
+    "ai-monitor": "node scripts/ai-prompt-monitor.js",
+    "report": "node scripts/report.js"
+  },
   "dependencies": {
     "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.73.0"
   }
 }
