@@ -44,6 +44,8 @@ async function sendEmail({ to, subject, html }) {
 // ── Append row to Google Sheet ─────────────────────────────────────────────
 async function logToSheet(d) {
   const sheets = google.sheets({ version: 'v4', auth: getAuth() });
+  // Prefix phone with apostrophe so Sheets treats "+1 305..." as text, not a formula.
+  const phoneCell = d.phone ? `'${d.phone}` : '';
   await sheets.spreadsheets.values.append({
     spreadsheetId: process.env.SHEET_ID,
     range: 'Sheet1!A:I',
@@ -55,7 +57,7 @@ async function logToSheet(d) {
         d.lastName,
         d.organisation,
         d.email,
-        d.phone,
+        phoneCell,
         d.interest,
         d.message,
         'New',
