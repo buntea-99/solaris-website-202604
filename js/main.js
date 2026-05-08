@@ -331,6 +331,7 @@
         lastName:     (form.querySelector('[name="lastName"]')     || {}).value || '',
         organisation: (form.querySelector('[name="organisation"]') || {}).value || '',
         email:        (form.querySelector('[name="email"]')        || {}).value || '',
+        phone:        (form.querySelector('[name="phone"]')        || {}).value || '',
         interest:     (form.querySelector('[name="interest"]')     || {}).value || '',
         message:      (form.querySelector('[name="message"]')      || {}).value || ''
       };
@@ -343,6 +344,11 @@
         errors.push('Email is required.');
       } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email.trim())) {
         errors.push('Please enter a valid email address.');
+      }
+      if (!fields.phone.trim()) {
+        errors.push('Phone number is required.');
+      } else if (fields.phone.replace(/\D/g, '').length < 7) {
+        errors.push('Please enter a valid phone number.');
       }
       if (!fields.message.trim()) errors.push('Message is required.');
 

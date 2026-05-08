@@ -46,7 +46,7 @@ async function logToSheet(d) {
   const sheets = google.sheets({ version: 'v4', auth: getAuth() });
   await sheets.spreadsheets.values.append({
     spreadsheetId: process.env.SHEET_ID,
-    range: 'Sheet1!A:H',
+    range: 'Sheet1!A:I',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
       values: [[
@@ -55,6 +55,7 @@ async function logToSheet(d) {
         d.lastName,
         d.organisation,
         d.email,
+        d.phone,
         d.interest,
         d.message,
         'New',
@@ -70,13 +71,16 @@ function clean(s) { return typeof s === 'string' ? s.replace(/[<>]/g, '').trim()
 // ── Contact endpoint ───────────────────────────────────────────────────────
 app.post('/api/contact', async (req, res) => {
   try {
-    const { firstName, lastName, organisation, email, interest, message } = req.body;
+    const { firstName, lastName, organisation, email, phone, interest, message } = req.body;
 
-    if (!firstName || !lastName || !email || !message) {
+    if (!firstName || !lastName || !email || !phone || !message) {
       return res.status(400).json({ success: false, error: 'Please fill in all required fields.' });
     }
     if (!isValidEmail(email)) {
       return res.status(400).json({ success: false, error: 'Please provide a valid email address.' });
+    }
+    if (typeof phone !== 'string' || phone.replace(/\D/g, '').length < 7) {
+      return res.status(400).json({ success: false, error: 'Please provide a valid phone number.' });
     }
 
     const d = {
@@ -84,6 +88,7 @@ app.post('/api/contact', async (req, res) => {
       lastName:     clean(lastName),
       organisation: clean(organisation) || 'Not provided',
       email:        clean(email),
+      phone:        clean(phone),
       interest:     clean(interest) || 'Not specified',
       message:      clean(message),
     };
@@ -103,6 +108,7 @@ app.post('/api/contact', async (req, res) => {
           <b>Name:</b> ${d.firstName} ${d.lastName}<br>
           <b>Organisation:</b> ${d.organisation}<br>
           <b>Email:</b> ${d.email}<br>
+          <b>Phone:</b> ${d.phone}<br>
           <b>Interest:</b> ${d.interest}<br>
           <b>Message:</b> ${d.message}
         </p>

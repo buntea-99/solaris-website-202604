@@ -35,7 +35,7 @@ async function logToSheet(d) {
   const sheets = google.sheets({ version: 'v4', auth: getAuth() });
   await sheets.spreadsheets.values.append({
     spreadsheetId: process.env.SHEET_ID,
-    range: 'Sheet1!A:H',
+    range: 'Sheet1!A:I',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
       values: [[
@@ -44,6 +44,7 @@ async function logToSheet(d) {
         d.lastName,
         d.organisation,
         d.email,
+        d.phone,
         d.interest,
         d.message,
         'New',
@@ -198,6 +199,7 @@ function notifyHtml(d) {
             <tr style="background:#F7F9FC"><td style="padding:12px 16px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A0AEC0" colspan="2">Lead Details</td></tr>
             <tr><td style="padding:10px 16px;font-size:13px;color:#718096;border-top:1px solid #E2E8F0;width:140px">Name</td><td style="padding:10px 16px;font-size:13px;color:#2D3748;font-weight:600;border-top:1px solid #E2E8F0">${d.firstName} ${d.lastName}</td></tr>
             <tr><td style="padding:10px 16px;font-size:13px;color:#718096;border-top:1px solid #E2E8F0">Email</td><td style="padding:10px 16px;font-size:13px;color:#2D3748;border-top:1px solid #E2E8F0"><a href="mailto:${d.email}" style="color:#C49A1A">${d.email}</a></td></tr>
+            <tr><td style="padding:10px 16px;font-size:13px;color:#718096;border-top:1px solid #E2E8F0">Phone</td><td style="padding:10px 16px;font-size:13px;color:#2D3748;border-top:1px solid #E2E8F0"><a href="tel:${d.phone.replace(/[^+\d]/g, '')}" style="color:#C49A1A">${d.phone}</a></td></tr>
             <tr><td style="padding:10px 16px;font-size:13px;color:#718096;border-top:1px solid #E2E8F0">Organisation</td><td style="padding:10px 16px;font-size:13px;color:#2D3748;border-top:1px solid #E2E8F0">${d.organisation}</td></tr>
             <tr><td style="padding:10px 16px;font-size:13px;color:#718096;border-top:1px solid #E2E8F0">Interest</td><td style="padding:10px 16px;font-size:13px;color:#2D3748;border-top:1px solid #E2E8F0">${d.interest}</td></tr>
             <tr><td style="padding:10px 16px;font-size:13px;color:#718096;border-top:1px solid #E2E8F0;vertical-align:top">Message</td><td style="padding:10px 16px;font-size:13px;color:#2D3748;border-top:1px solid #E2E8F0;line-height:1.6">${d.message}</td></tr>
@@ -224,13 +226,16 @@ module.exports = async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    const { firstName, lastName, organisation, email, interest, message } = req.body || {};
+    const { firstName, lastName, organisation, email, phone, interest, message } = req.body || {};
 
-    if (!firstName || !lastName || !email || !message) {
+    if (!firstName || !lastName || !email || !phone || !message) {
       return res.status(400).json({ success: false, error: 'Please fill in all required fields.' });
     }
     if (!isValidEmail(email)) {
       return res.status(400).json({ success: false, error: 'Please provide a valid email address.' });
+    }
+    if (typeof phone !== 'string' || phone.replace(/\D/g, '').length < 7) {
+      return res.status(400).json({ success: false, error: 'Please provide a valid phone number.' });
     }
 
     const d = {
@@ -238,6 +243,7 @@ module.exports = async function handler(req, res) {
       lastName:     clean(lastName),
       organisation: clean(organisation) || 'Not provided',
       email:        clean(email),
+      phone:        clean(phone),
       interest:     clean(interest) || 'Not specified',
       message:      clean(message),
     };
