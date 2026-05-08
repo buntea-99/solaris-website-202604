@@ -1,6 +1,19 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/CLAUDE.md", "destination": "/404.html" },
+    { "source": "/claude.md", "destination": "/404.html" },
+    { "source": "/docs/:path*", "destination": "/404.html" },
+    { "source": "/scripts/:path*", "destination": "/404.html" },
+    { "source": "/data/offsite-progress.md", "destination": "/404.html" },
+    { "source": "/data/ai-monitoring-prompts.json", "destination": "/404.html" },
+    { "source": "/data/priority-keywords.json", "destination": "/404.html" },
+    { "source": "/data/semrush/:path*", "destination": "/404.html" },
+    { "source": "/data/ai-monitoring/:path*", "destination": "/404.html" },
+    { "source": "/youtubeseovideo:n.txt", "destination": "/404.html" },
+    { "source": "/youtubevideo:n.txt", "destination": "/404.html" }
+  ],
   "redirects": [
     { "source": "/pages/about.html", "destination": "/#about", "permanent": true },
     { "source": "/pages/services.html", "destination": "/#capabilities", "permanent": true },

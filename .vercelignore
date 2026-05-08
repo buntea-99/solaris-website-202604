@@ -1,0 +1,39 @@
+# Internal developer-only files. Must NEVER be deployed to Vercel.
+# These contain client policy notes, off-site execution playbooks,
+# competitor lists and SEO scripts that should not be publicly fetchable.
+# vercel.json also has rewrite rules as a second line of defence.
+
+CLAUDE.md
+docs/
+scripts/
+
+# Internal data tracking. data/index.html is a public catalogue page
+# and must NOT be ignored, so list specific internal files here.
+data/offsite-progress.md
+data/ai-monitoring-prompts.json
+data/priority-keywords.json
+data/semrush/
+data/ai-monitoring/
+
+# YouTube SEO transcripts. Reference material only.
+youtubeseovideo1.txt
+youtubevideo2.txt
+youtubevideo3.txt
+youtubevideo4.txt
+
+# Environment + local backend. Never publish.
+.env
+backend/.env
+backend/node_modules/
+backend/get-token.js
+backend/update-sheet-headers.js
+backend/migrate-historical-rows.js
+backend/GMAIL_SETUP.md
+
+# Old design experiments. Already excluded by absence of links, but be explicit.
+design-aesthetic-test-4/
+design-aesthetic-solaris-wireless-test-5/
+
+# Plan files
+b3ebb527682d352bfa2973e03befa11e.txt
+icon-picker.html
