@@ -33,6 +33,18 @@
     { "source": "/products", "destination": "/#products", "permanent": true },
     { "source": "/products/", "destination": "/#products", "permanent": true },
 
+    { "source": "/products/:slug(xiaomi-.*)", "destination": "/products/mobile-devices", "permanent": true },
+    { "source": "/products/:slug(samsung-tab-.*)", "destination": "/products/mobile-devices", "permanent": true },
+
+    { "source": "/es", "destination": "/", "permanent": true },
+    { "source": "/es/:path*", "destination": "/", "permanent": true },
+
+    { "source": "/search", "destination": "/#products", "permanent": true },
+
+    { "source": "/sourcing-end-of-life-electronic-components", "destination": "/blog/sourcing-end-of-life-electronic-components", "permanent": true },
+    { "source": "/institutional-mobile-device-sourcing", "destination": "/blog/institutional-mobile-device-sourcing", "permanent": true },
+    { "source": "/mdm-enrollment-bulk-device-provisioning", "destination": "/blog/mdm-enrollment-bulk-device-provisioning", "permanent": true },
+
     { "source": "/account", "destination": "/#contact", "permanent": true },
     { "source": "/account/", "destination": "/#contact", "permanent": true },
     { "source": "/account/register", "destination": "/#contact", "permanent": true },
