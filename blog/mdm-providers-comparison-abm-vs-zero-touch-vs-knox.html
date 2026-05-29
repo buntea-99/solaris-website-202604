@@ -42,7 +42,7 @@
   "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".hero-desc", ".company-summary", ".kf-block", ".qa-block"] },
   "url": "https://www.solariswireless.com/blog/mdm-providers-comparison-abm-vs-zero-touch-vs-knox",
   "datePublished": "2026-04-30",
-  "dateModified": "2026-05-02",
+  "dateModified": "2026-05-30",
   "author": { "@type": "Person", "@id": "https://www.solariswireless.com/about#editorial-team", "name": "Solaris Wireless Editorial Team", "url": "https://www.solariswireless.com/about" },
   "publisher": {
     "@type": "Organization", "name": "Solaris Wireless", "url": "https://www.solariswireless.com",
@@ -118,7 +118,7 @@
     </div>
     <div class="blog-byline">
       <span class="blog-byline-author">By the Solaris Wireless Procurement Team</span>
-      <span>Last updated: April 30, 2026</span>
+      <span>Last updated: May 30, 2026</span>
     </div>
   </div>
 </section>
@@ -149,6 +149,72 @@
     <h2>Why Compare These Three</h2>
     <p>Solaris Wireless, founded 2013, has been serving institutional buyers in this category since the company's earliest engagements. Auto-enrolment is the single biggest operational lever in institutional device deployment. Without it, IT spends 15-30 minutes per device on manual configuration; with it, devices ship sealed direct to employees and configure themselves on first activation. The savings on a 1,000-device fleet rollout are measured in hundreds of hours and tens of thousands of dollars.</p>
     <p>Three programmes provide auto-enrolment for institutional fleets: Apple Business Manager (ABM) for Apple devices, Google Zero-Touch Enrollment for Android, and Samsung Knox Mobile Enrollment for Samsung-specific Android. Most enterprises run a mixed Apple-and-Android fleet and need at least two of these. Samsung-heavy fleets benefit from layering all three. This guide compares them side-by-side.</p>
+
+    <h2>ABM vs Zero-Touch vs Knox: side-by-side comparison</h2>
+    <div style="overflow-x:auto;margin:1.5rem 0">
+      <table style="width:100%;min-width:640px;border-collapse:collapse;font-family:'Manrope',sans-serif;font-size:0.9rem;line-height:1.45">
+        <caption style="caption-side:top;text-align:left;font-weight:600;color:#475569;padding-bottom:0.6rem">Apple Business Manager (DEP) vs Google Zero-Touch vs Samsung Knox Mobile Enrollment, for institutional bulk device provisioning.</caption>
+        <thead>
+          <tr style="background:#0f172a;color:#fff">
+            <th scope="col" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #0f172a">Dimension</th>
+            <th scope="col" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #0f172a">Apple Business Manager (ABM / DEP)</th>
+            <th scope="col" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #0f172a">Google Zero-Touch Enrollment</th>
+            <th scope="col" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #0f172a">Samsung Knox Mobile Enrollment</th>
+          </tr>
+        </thead>
+        <tbody style="color:#1e293b">
+          <tr style="background:#f8fafc">
+            <th scope="row" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #e2e8f0;font-weight:600">Devices covered</th>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">iPhone, iPad, Mac, Apple TV, Apple Watch (paired)</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Any Android OEM in the programme (Pixel, Samsung, Motorola, Sonim, Kyocera)</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Samsung Galaxy and Samsung enterprise devices only</td>
+          </tr>
+          <tr>
+            <th scope="row" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #e2e8f0;font-weight:600">Platform / OS</th>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">iOS, iPadOS, macOS, tvOS</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Android (all participating OEMs)</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Android (Samsung only)</td>
+          </tr>
+          <tr style="background:#f8fafc">
+            <th scope="row" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #e2e8f0;font-weight:600">Reseller model</th>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Apple Authorised Reseller registered in your ABM tenant</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Zero-Touch registered reseller registers each IMEI pre-shipment</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Samsung Approved Reseller registers each IMEI in your Knox portal</td>
+          </tr>
+          <tr>
+            <th scope="row" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #e2e8f0;font-weight:600">MDM / EMM compatibility</th>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Jamf, Intune, Workspace ONE, Mosyle, Kandji, Hexnode</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Intune, Workspace ONE, Jamf, Ivanti, SOTI, Knox Manage, MaaS360</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Knox Manage, Intune, Workspace ONE, MaaS360, SOTI, Ivanti</td>
+          </tr>
+          <tr style="background:#f8fafc">
+            <th scope="row" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #e2e8f0;font-weight:600">Setup requirements</th>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">D-U-N-S number, business verification, designated admin</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Google account, Zero-Touch portal access, EMM configuration</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Knox account, Knox portal access, EMM configuration</td>
+          </tr>
+          <tr>
+            <th scope="row" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #e2e8f0;font-weight:600">Configuration depth</th>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Standard DEP enrolment and supervision</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Standard Android Enterprise enrolment</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Deepest: Knox security profile, container, Knox Wi-Fi, Samsung restrictions</td>
+          </tr>
+          <tr style="background:#f8fafc">
+            <th scope="row" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #e2e8f0;font-weight:600">Platform cost</th>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Free (device pricing via commercial channel)</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Free (device pricing via commercial channel)</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Free (device pricing via commercial channel)</td>
+          </tr>
+          <tr>
+            <th scope="row" style="padding:0.7rem 0.9rem;text-align:left;border:1px solid #e2e8f0;font-weight:600">Best for</th>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Any Apple devices at scale</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Any Android at scale, regardless of OEM</td>
+            <td style="padding:0.7rem 0.9rem;border:1px solid #e2e8f0">Samsung-heavy fleets needing Knox-tier configuration</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <h2>Apple Business Manager (ABM) and DEP</h2>
     <ul>
       <li><strong>Devices covered:</strong> iPhone, iPad, Mac, Apple TV, Apple Watch (via paired iPhone)</li>
