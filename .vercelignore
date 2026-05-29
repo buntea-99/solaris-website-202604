@@ -34,6 +34,11 @@ backend/GMAIL_SETUP.md
 design-aesthetic-test-4/
 design-aesthetic-solaris-wireless-test-5/
 
-# Plan files
-b3ebb527682d352bfa2973e03befa11e.txt
+# Dev tool, not for public index
 icon-picker.html
+
+# NOTE: b3ebb527682d352bfa2973e03befa11e.txt (the IndexNow verification key) must
+# NOT be ignored. IndexNow validates domain ownership by fetching this file over
+# HTTP; if it 404s, every IndexNow ping is rejected. It is a public verification
+# token by design (like a search-engine site-verification file), so it is safe to
+# serve. Do not re-add it here.
