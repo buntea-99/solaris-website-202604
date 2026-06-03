@@ -14,6 +14,22 @@
 
 set -euo pipefail
 
+# ============================================================================
+# DISABLED 2026-06-03 — DO NOT RUN AS-IS.
+# This script bumps dateModified on 26 pages with NO content change, then
+# commits, pushes and pings IndexNow. In 2026 that is "schema drift" /
+# manufactured freshness: an enumerated quality-system manipulation risk on a
+# clean domain, and Google checks visible-byline vs schema-date parity. It also
+# includes index.html, which violates the homepage-freeze rule.
+#
+# CORRECT practice: only move dateModified when a page's CONTENT actually
+# changed (a refreshed stat, a new FAQ line, an updated table row), and bump it
+# as the LAST step of that real edit. Never as a standalone cron.
+# This guard exits before any change.
+echo "refresh-datemodified.sh is intentionally disabled (manufactured-freshness risk). See header." >&2
+exit 1
+# ============================================================================
+
 DATE="${1:-$(date -u +%Y-%m-%d)}"
 echo "Refreshing dateModified to $DATE"
 
