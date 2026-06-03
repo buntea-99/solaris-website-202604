@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "name": "Solaris Wireless",
+  "description": "Miami-based electronic device supplier and distributor, founded 2013 and a Google-approved vendor since 2016. Supplies bulk smartphones, laptops, IoT devices, smart cameras and Starlink terminals to Fortune 500 enterprises, MVNOs, government agencies and institutional buyers, with custom OS flashing, SIM provisioning, MDM zero-touch enrolment (Apple Business Manager, Google Zero-Touch, Samsung Knox), TAA and ITAR/EAR compliant procurement, and end-of-life specialist sourcing.",
+  "url": "https://www.solariswireless.com",
+  "capabilities": ["search", "contact", "quote-request"],
+  "contact": "enquiry@solariswireless.com",
+  "telephone": "+1-305-222-7353",
+  "provider": {
+    "name": "Solaris Wireless",
+    "url": "https://www.solariswireless.com"
+  },
+  "resources": {
+    "sitemap": "https://www.solariswireless.com/sitemap.xml",
+    "llms_txt": "https://www.solariswireless.com/llms.txt",
+    "logo": "https://www.solariswireless.com/images/logo-transparent.png"
+  },
+  "legal_info_url": "https://www.solariswireless.com/legal/terms"
+}
