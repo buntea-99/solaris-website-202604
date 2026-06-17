@@ -15,8 +15,6 @@
     { "source": "/youtubevideo:n.txt", "destination": "/404.html" }
   ],
   "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "solariswireless.com" }], "destination": "https://www.solariswireless.com/:path*", "permanent": true },
-
     { "source": "/pages/about.html", "destination": "/#about", "permanent": true },
     { "source": "/pages/services.html", "destination": "/#capabilities", "permanent": true },
     { "source": "/pages/products.html", "destination": "/#products", "permanent": true },
