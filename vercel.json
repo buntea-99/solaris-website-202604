@@ -1,6 +1,10 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "headers": [
+    { "source": "/(.*)\\.(css|js)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }] },
+    { "source": "/(.*)\\.(png|jpg|jpeg|gif|svg|webp|ico|woff|woff2)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=2592000" }] }
+  ],
   "rewrites": [
     { "source": "/CLAUDE.md", "destination": "/404.html" },
     { "source": "/claude.md", "destination": "/404.html" },
