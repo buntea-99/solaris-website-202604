@@ -383,13 +383,13 @@
             form.reset();
             showModal();
           } else {
-            // Still show modal — submission was received even if email failed
+            // Still show modal, submission was received even if email failed
             form.reset();
             showModal();
           }
         })
         .catch(function() {
-          // Network error — show modal anyway so user isn't left hanging
+          // Network error, show modal anyway so user isn't left hanging
           form.reset();
           showModal();
         })
@@ -417,6 +417,9 @@
 
       var path = href.substring(0, hashIndex);
       var hash = href.substring(hashIndex);
+
+      // Bare "#" links have no target; querySelector('#') throws
+      if (hash.length < 2) return;
 
       // If the link points to a different page, let the browser navigate normally
       if (path && path !== '' && !location.pathname.endsWith(path)) return;
@@ -478,7 +481,7 @@
       return;
     }
 
-    // Single-page scroll spy — highlight whichever section is most in view
+    // Single-page scroll spy, highlight whichever section is most in view
     // Find the "Products & Cases" link so we can map #case-studies to it too
     var productsCasesLink = null;
     links.forEach(function (link) {
@@ -526,7 +529,7 @@
   }
 
   /* ==========================================================================
-     FLIP CARDS — mobile tap to flip, desktop hover handled by CSS
+     FLIP CARDS, mobile tap to flip, desktop hover handled by CSS
      ========================================================================== */
   function initFlipCards() {
     var isTouchDevice = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
